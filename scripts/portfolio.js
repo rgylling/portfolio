@@ -9,7 +9,7 @@ var portData = [
   title:'Project Two',
   url:'www.who.com',
   snapshot:'../img/puppy2.jpg',
-  body:'</p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
+  body:'</p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff  This is where I talk about my project and stuff  </p>'
 },
 {
   title:'Project Three',
@@ -34,7 +34,7 @@ Article.prototype.toHtml = function() {
   $newArticle.find('h1').text(this.title);
   $newArticle.find('img').attr('src',this.snapshot);
   $newArticle.find('.article-body').html(this.body);
-  $newArticle.append('<hr>');
+  //$newArticle.append('<hr>');
   $newArticle.removeClass('template');
   return $newArticle;
 }
