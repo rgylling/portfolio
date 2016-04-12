@@ -34,7 +34,6 @@ Article.prototype.toHtml = function() {
   $newArticle.find('h1').text(this.title);
   $newArticle.find('img').attr('src',this.snapshot);
   $newArticle.find('.article-body').html(this.body);
-  //$newArticle.append('<hr>');
   $newArticle.removeClass('template');
   return $newArticle;
 }
