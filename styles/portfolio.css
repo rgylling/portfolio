@@ -3,3 +3,15 @@
 .template {
   display: none;
 }
+
+body {
+    padding-top: 65px;
+}
+
+.jumbotron {
+  color:white;
+  height: 500px;
+  background-image: url("../img/cityview1.jpg");
+  background-position: bottom;
+  
+}
