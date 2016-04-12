@@ -1,9 +1,53 @@
 
-* {
-  text-align:center;
-  margin: 0 auto 0 auto;
-}
 
 .template {
   display: none;
+}
+
+
+
+
+
+.jumbotron {
+  color:white;
+  height: 500px;
+  background-image: url("../img/ghost1.jpg");
+  background-position: bottom;
+
+}
+
+.mainname {
+  margin-top:125px;
+}
+
+.fa-linkedin {
+  margin-right:10px;
+}
+
+.fa-github {
+  margin-left:10px;
+}
+
+.jumbotron p {
+  font-size:30px;
+}
+
+img {
+  -webkit-filter:grayscale(100%);
+  border-radius:20px;
+}
+
+footer {
+  border-top: solid;
+  text-align:center;
+  margin-top: 200px;
+}
+
+p {
+  margin: auto;
+}
+
+#top {
+
+  margin: 200px auto 0px auto;
 }
