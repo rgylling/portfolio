@@ -4,14 +4,34 @@
   display: none;
 }
 
-body {
-    padding-top: 65px;
-}
+
+
+
 
 .jumbotron {
   color:white;
   height: 500px;
-  background-image: url("../img/cityview1.jpg");
+  background-image: url("../img/ghost1.jpg");
   background-position: bottom;
-  
+
+}
+
+.mainname {
+  margin-top:125px;
+}
+
+.fa-linkedin {
+  margin-right:10px;
+}
+
+.fa-github {
+  margin-left:10px;
+}
+
+.jumbotron p {
+  font-size:30px;
+}
+
+img {
+  -webkit-filter:grayscale(100%);
 }

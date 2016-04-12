@@ -1,18 +1,18 @@
 var portData = [
    {
-  title:'PlaceHolder',
+  title:'Project One',
   url:'www.hi.com',
   snapshot:'../img/puppy1.jpg',
   body:'<p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
 },
 {
-  title:'PlaceHolder',
+  title:'Project Two',
   url:'www.who.com',
   snapshot:'../img/puppy2.jpg',
   body:'</p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
 },
 {
-  title:'PlaceHolder',
+  title:'Project Three',
   url:'www.me.com',
   snapshot:'../img/puppy3.jpg',
   body:'<p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
