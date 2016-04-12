@@ -2,35 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/portfolio.css">
   </head>
   <body>
-    <main>
-    <div>
-    <header>
-      <h1>
-        Randy Gylling
-      </h1>
-      <p>Web Developer</p>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="linkedin.com" target="_blank">Linkedin</a></li>
-        <li><a href="github.com" target="_blank">Github</a></li>
-      </ul>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div id = "changecolor" class="container">
+
+        <a id="changethis" class="navbar-brand text-muted" href="#">Brigada Logo</a>
+        <div id= "firsts" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id = "first" class="active"><a href="#">Home</a></li>
+            <li id ="second"><a href="#">Placeholder</a></li>
+            <li id ="third"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End navbar -->
+
+    <div class="container">
+      <div class="jumbotron">
+          <h1>Randy Gylling</h1>
+        <p class="lead">Web Developer</p>
+      </div>
     </div>
-    </nav>
+   <main>
     <section id="articles">
       <article class="template" data-category="cat">
+        <div id="top" class="row">
+        <div class="col-sm-4">
         <header>
           <h1>My Projects</h1>
+          <img src="">
         </header>
-        <section class="article-body"></section>
+        <section class="article-body "></section>
       </article>
     </section>
   </div>
+</div>
+</div>
 </main>
 <footer>
   &copy; 2016 Randy Gylling
