@@ -45,7 +45,7 @@ portData.forEach(function(ele) {
 articles.forEach(function(a){
   $('#articles').append(a.toHtml())
 });
-
+/*
 $('.hideme').css('display','none');
 
 $('#second').on('click', function(){
@@ -60,3 +60,20 @@ $('#first').on('click', function () {
   $('.hideme2').show();
   $('.hideme').css('display','none');
 })
+*/
+
+$('section .aboutsection').css('display','none');
+
+
+  $('.navbar .tab:nth-child(2)').click(function() {
+    $('section .aboutsection').show();
+    $('.hideme2').css('display','none');
+    $('html, body').animate({
+      scrollTop: $('section .aboutsection').offset().top
+  }, 1000);
+
+  });
+  $('.navbar .tab:first-child').click(function(){
+    $('.hideme2').show();
+    $('section .aboutsection').css('display','none');
+   });
