@@ -13,6 +13,7 @@
   height: 500px;
   background-image: url("../img/ghost1.jpg");
   background-position: bottom;
+  margin-top:50px;
 
 }
 
@@ -30,6 +31,10 @@
 
 .jumbotron p {
   font-size:30px;
+}
+
+.hideme{
+  padding-top:60px;
 }
 
 img {
