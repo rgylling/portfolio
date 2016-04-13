@@ -13,6 +13,7 @@
   height: 500px;
   background-image: url("../img/ghost1.jpg");
   background-position: bottom;
+  margin-top:50px;
 
 }
 
@@ -30,6 +31,29 @@
 
 .jumbotron p {
   font-size:30px;
+}
+
+.aboutsection{
+  padding-top:170px;
+}
+
+.hideme2{
+  width:100%;
+}
+
+.fa {
+  font-size:28px;
+  color:black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:black;
+  font-size:20px;
+}
+.navbar-default {
+  border-bottom:solid 1px;
+  border-color: #996600;
+
 }
 
 img {

@@ -2,19 +2,19 @@ var portData = [
    {
   title:'Project One',
   url:'www.hi.com',
-  snapshot:'../img/puppy1.jpg',
+  snapshot:'img/puppy1.jpg',
   body:'<p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
 },
 {
   title:'Project Two',
   url:'www.who.com',
-  snapshot:'../img/puppy2.jpg',
+  snapshot:'img/puppy2.jpg',
   body:'</p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff  This is where I talk about my project and stuff  </p>'
 },
 {
   title:'Project Three',
   url:'www.me.com',
-  snapshot:'../img/puppy3.jpg',
+  snapshot:'img/puppy3.jpg',
   body:'<p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
 },
 ];
@@ -44,4 +44,21 @@ portData.forEach(function(ele) {
 
 articles.forEach(function(a){
   $('#articles').append(a.toHtml())
+});
+
+
+$('section .aboutsection').css('display','none');
+
+
+$('nav li:nth-child(2)').click(function() {
+    $('section .aboutsection').show();
+    $('main section').css('display','none');
+    $('html, body').animate({
+      scrollTop: $('section .aboutsection').offset().top
+    }, 1000);
+
+});
+$('nav li:first-child').click(function(){
+    $('main section').show();
+    $('section .aboutsection').css('display','none');
 });
