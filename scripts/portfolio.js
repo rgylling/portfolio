@@ -46,7 +46,7 @@ articles.forEach(function(a){
   $('#articles').append(a.toHtml())
 });
 
-/*
+
 $('section .aboutsection').css('display','none');
 
 $('nav').on('click',function(){
@@ -62,4 +62,3 @@ $('nav li:first-child').click(function(){
     $('section .aboutsection').css('display','none');
 });
 });
-*/
