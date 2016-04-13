@@ -5,9 +5,9 @@
 }
 
 
-#changethis {
-  font-size:28px;
-  color:white;
+#fontchange {
+  font-size:30px;
+  color:#FED136;
 }
 
 
@@ -16,7 +16,7 @@
   height: 500px;
   background-image: url("../img/ghost1.jpg");
   background-position: bottom;
-
+  margin-top:50px;
 }
 
 .mainname {
@@ -43,14 +43,20 @@
   width:100%;
 }
 
+.navbar {
+  min-height:60px;
+}
 
+a {
+  color:#FED136;
+}
 
 .navbar-default .navbar-nav>li>a {
-  color:white;
+  color:#FED136;
   font-size:20px;
 }
 .navbar-default {
-  background-color:transparent;
+  background-color:#222222;
   border:none;
 }
 
@@ -75,6 +81,7 @@ p {
 
 .tab {
   float:right;
+  padding-top:5px;
 }
 
 #first {
