@@ -65,7 +65,7 @@ $('#first').on('click', function () {
 $('section .aboutsection').css('display','none');
 
 
-  $('.navbar .tab:nth-child(2)').click(function() {
+  $('nav li:nth-child(2)').click(function() {
     $('section .aboutsection').show();
     $('main section').css('display','none');
     $('html, body').animate({
@@ -73,7 +73,7 @@ $('section .aboutsection').css('display','none');
   }, 1000);
 
   });
-  $('.navbar .tab:first-child').click(function(){
+  $('nav li:first-child').click(function(){
     $('main section').show();
     $('section .aboutsection').css('display','none');
    });
