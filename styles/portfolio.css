@@ -41,6 +41,21 @@
   width:100%;
 }
 
+.fa {
+  font-size:28px;
+  color:black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:black;
+  font-size:20px;
+}
+.navbar-default {
+  border-bottom:solid 1px;
+  border-color: #996600;
+
+}
+
 img {
   -webkit-filter:grayscale(100%);
   border-radius:20px;

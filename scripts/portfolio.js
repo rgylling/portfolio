@@ -45,35 +45,20 @@ portData.forEach(function(ele) {
 articles.forEach(function(a){
   $('#articles').append(a.toHtml())
 });
-/*
-$('.hideme').css('display','none');
 
-$('#second').on('click', function(){
-  $('.hideme').show();
-  $('.hideme2').css('display','none');
-  $('html, body').animate({
-    scrollTop: $(".hideme").offset().top
-}, 1000);
-});
-
-$('#first').on('click', function () {
-  $('.hideme2').show();
-  $('.hideme').css('display','none');
-})
-*/
 
 $('section .aboutsection').css('display','none');
 
 
-  $('nav li:nth-child(2)').click(function() {
+$('nav li:nth-child(2)').click(function() {
     $('section .aboutsection').show();
     $('main section').css('display','none');
     $('html, body').animate({
       scrollTop: $('section .aboutsection').offset().top
-  }, 1000);
+    }, 1000);
 
-  });
-  $('nav li:first-child').click(function(){
+});
+$('nav li:first-child').click(function(){
     $('main section').show();
     $('section .aboutsection').css('display','none');
-   });
+});
