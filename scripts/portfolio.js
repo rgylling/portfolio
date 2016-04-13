@@ -46,18 +46,18 @@ articles.forEach(function(a){
   $('#articles').append(a.toHtml())
 });
 
-$('.hideme').hide();
+$('.hideme').css('display','none');
 
 $('#second').on('click', function(){
   $('.hideme').show();
-  $('.hideme2').hide();
+  $('.hideme2').css('display','none');
   $('html, body').animate({
    scrollTop: $(".hideme").offset().top
 }, 1000);
 });
 
 $('#first').on('click', function () {
-  $("html, body").animate({ scrollTop: 0 }, 3000);
+
   $('.hideme2').show();
-  $('.hideme').hide();
+  $('.hideme').css('display','none');
 })
