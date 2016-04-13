@@ -5,7 +5,10 @@
 }
 
 
-
+#changethis {
+  font-size:28px;
+  color:black;
+}
 
 
 .jumbotron {
@@ -41,10 +44,7 @@
   width:100%;
 }
 
-.fa {
-  font-size:28px;
-  color:black;
-}
+
 
 .navbar-default .navbar-nav>li>a {
   color:black;
