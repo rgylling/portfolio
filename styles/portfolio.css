@@ -51,8 +51,12 @@ a {
   color:#FED136;
 }
 
+h1 {
+  font-weight:200;
+}
+
 .navbar-default .navbar-nav>li>a {
-  color:#FED136;
+  color:#f6bf01;
   font-size:20px;
 }
 .navbar-default {
@@ -61,7 +65,7 @@ a {
 }
 
 img {
-  -webkit-filter:grayscale(100%);
+  -webkit-filter:saturate(80%);
   border-radius:20px;
 }
 
