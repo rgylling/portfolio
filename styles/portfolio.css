@@ -7,7 +7,7 @@
 
 #changethis {
   font-size:28px;
-  color:black;
+  color:white;
 }
 
 
@@ -16,7 +16,6 @@
   height: 500px;
   background-image: url("../img/ghost1.jpg");
   background-position: bottom;
-  margin-top:50px;
 
 }
 
@@ -47,13 +46,12 @@
 
 
 .navbar-default .navbar-nav>li>a {
-  color:black;
+  color:white;
   font-size:20px;
 }
 .navbar-default {
-  border-bottom:solid 1px;
-  border-color: #996600;
-
+  background-color:transparent;
+  border:none;
 }
 
 img {
@@ -72,11 +70,17 @@ p {
 }
 
 #top {
-
   margin: 200px auto 0px auto;
 }
 
 .tab {
+  float:right;
+}
 
+#first {
+  display:block;
+}
 
+#second {
+  display:inline;
 }
