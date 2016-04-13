@@ -67,13 +67,13 @@ $('section .aboutsection').css('display','none');
 
   $('.navbar .tab:nth-child(2)').click(function() {
     $('section .aboutsection').show();
-    $('.hideme2').css('display','none');
+    $('main section').css('display','none');
     $('html, body').animate({
       scrollTop: $('section .aboutsection').offset().top
   }, 1000);
 
   });
   $('.navbar .tab:first-child').click(function(){
-    $('.hideme2').show();
+    $('main section').show();
     $('section .aboutsection').css('display','none');
    });
