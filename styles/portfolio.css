@@ -59,6 +59,10 @@ h1 {
   color:#f6bf01;
   font-size:20px;
 }
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color:white;
+}
+
 .navbar-default {
   background-color:#222222;
   border:none;
