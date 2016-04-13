@@ -52,12 +52,11 @@ $('#second').on('click', function(){
   $('.hideme').show();
   $('.hideme2').css('display','none');
   $('html, body').animate({
-   scrollTop: $(".hideme").offset().top
+    scrollTop: $(".hideme").offset().top
 }, 1000);
 });
 
 $('#first').on('click', function () {
-
   $('.hideme2').show();
   $('.hideme').css('display','none');
 })
