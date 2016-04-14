@@ -50,6 +50,7 @@
     </div>
   </div>
 </section>
+<script id="articleInfo" type="text/x-handlebars=template">
    <main>
     <section>
      <div class="container hideme2">
@@ -58,10 +59,10 @@
           <article class="template" data-category="cat">
             <div class="col-sm-4 text-center ">
             <header>
-            <h1>My Projects</h1>
-            <img src="">
+            <h1>{{title}}</h1>
+            <img src={{snapshot}}>
             </header>
-            <section class="article-body text-justify"></section>
+            <section class="article-body text-justify">{{body}}</section>
           </article>
         </section>
         </div>
@@ -69,7 +70,7 @@
     </div>
   <section>
 </main>
-
+</script>
 <div class="col-sm-12 footercolor ">
   <footer>
     <p>  &copy; 2016 Randy Gylling </p>
@@ -77,6 +78,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src= "scripts/portfolio.js"> </script>
   </body>
