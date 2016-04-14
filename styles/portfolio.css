@@ -5,7 +5,10 @@
 }
 
 
-
+#fontchange {
+  font-size:30px;
+  color:#FED136;
+}
 
 
 .jumbotron {
@@ -14,7 +17,6 @@
   background-image: url("../img/ghost1.jpg");
   background-position: bottom;
   margin-top:50px;
-
 }
 
 .mainname {
@@ -34,37 +36,52 @@
 }
 
 .aboutsection{
-  padding-top:170px;
+  padding-top:100px;
+  padding-bottom:100px;
 }
 
 .hideme2{
   width:100%;
+  margin-bottom:100px;
 }
 
-.fa {
-  font-size:28px;
-  color:black;
+.navbar {
+  min-height:60px;
+}
+
+a {
+  color:#FED136;
+}
+
+h1 {
+  font-weight:200;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color:black;
+  color:#f6bf01;
   font-size:20px;
 }
-.navbar-default {
-  border-bottom:solid 1px;
-  border-color: #996600;
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color:white;
+}
 
+.navbar-default {
+  background-color:#222222;
+  border:none;
 }
 
 img {
-  -webkit-filter:grayscale(100%);
+  -webkit-filter:saturate(80%);
   border-radius:20px;
 }
 
 footer {
-  border-top: solid;
   text-align:center;
-  margin-top: 200px;
+  color: #f6bf01;
+}
+
+.footercolor {
+  background-color: #222222;
 }
 
 p {
@@ -72,6 +89,18 @@ p {
 }
 
 #top {
-
   margin: 200px auto 0px auto;
+}
+
+.tab {
+  float:right;
+  padding-top:5px;
+}
+
+#first {
+  display:block;
+}
+
+#second {
+  display:inline;
 }
