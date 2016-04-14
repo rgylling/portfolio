@@ -36,11 +36,13 @@
 }
 
 .aboutsection{
-  padding-top:170px;
+  padding-top:100px;
+  padding-bottom:100px;
 }
 
 .hideme2{
   width:100%;
+  margin-bottom:100px;
 }
 
 .navbar {
@@ -74,9 +76,12 @@ img {
 }
 
 footer {
-  border-top: solid;
   text-align:center;
-  margin-top: 200px;
+  color: #f6bf01;
+}
+
+.footercolor {
+  background-color: #222222;
 }
 
 p {
