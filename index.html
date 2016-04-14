@@ -50,11 +50,9 @@
     </div>
   </div>
 </section>
-<script id="articleInfo" type="text/x-handlebars=template">
-   <main>
-    <section>
-     <div class="container hideme2">
-       <div id="top" class="row">
+
+
+         <script id="articleInfo" type="text/x-handlebars=template">
         <section id="articles">
           <article class="template" data-category="cat">
             <div class="col-sm-4 text-center ">
@@ -62,15 +60,21 @@
             <h1>{{title}}</h1>
             <img src={{snapshot}}>
             </header>
-            <section class="article-body text-justify">{{body}}</section>
+            <section class="article-body text-justify">{{{body}}}</section>
           </article>
         </section>
         </div>
-      </div>
-    </div>
-  <section>
+        </script>
+
+<main>
+ <section>
+<div class="container hideme2">
+  <div class="row">
+<div id="hellomike"></div>
+</section>
 </main>
-</script>
+</div>
+</div>
 <div class="col-sm-12 footercolor ">
   <footer>
     <p>  &copy; 2016 Randy Gylling </p>

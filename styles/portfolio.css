@@ -1,8 +1,6 @@
 
 
-.template {
-  display: none;
-}
+
 
 
 #fontchange {
@@ -45,6 +43,7 @@
 .hideme2{
   width:100%;
   margin-bottom:100px;
+  margin-top:100px;
 }
 
 .navbar {

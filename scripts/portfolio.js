@@ -2,7 +2,7 @@ var portData = [
   {
     title:'Project One',
     url:'www.hi.com',
-    snapshot:'"img/puppy1.jpg"',
+    snapshot:'img/puppy1.jpg',
     body:'<p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
   },
   {
@@ -30,12 +30,17 @@ function Article (opts) {
 }
 
 Article.prototype.toHtml = function() {
+  var source = $('#articleInfo').html();
+  var template = Handlebars.compile(source);
+  return template(this);
+  /*
   var $newArticle = $('article.template').clone();
   $newArticle.find('h1').text(this.title);
   $newArticle.find('img').attr('src',this.snapshot);
   $newArticle.find('.article-body').html(this.body);
   $newArticle.removeClass('template');
   return $newArticle;
+  */
 };
 
 portData.forEach(function(ele) {
@@ -43,7 +48,7 @@ portData.forEach(function(ele) {
 });
 
 articles.forEach(function(a){
-  $('#articles').append(a.toHtml());
+  $('#hellomike').append(a.toHtml());
 });
 
 
