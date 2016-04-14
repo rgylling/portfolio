@@ -1,0 +1,21 @@
+a {
+  color:#FED136;
+}
+
+h1 {
+  font-weight:100;
+}
+
+img {
+  -webkit-filter:saturate(80%);
+  border-radius:20px;
+}
+
+footer {
+  text-align:center;
+  color: #f6bf01;
+}
+
+p {
+  margin: auto;
+}
