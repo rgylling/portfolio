@@ -17,14 +17,35 @@
   font-size:3.998em;
 }
 
+.backgroundbox {
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+  background-color:rgba(34, 34, 34,1);
+  border-radius: 20px;
+}
+
 .jumbotron p {
   font-size:30px;
 }
 
 .hideme2{
   width:100%;
-  margin-bottom:100px;
-  margin-top:100px;
+  margin-bottom:200px;
+  margin-top:200px;
+}
+
+.subtitle {
+  color:#f6bf01;
+}
+
+.makewhite {
+  color:white;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .navbar-default .navbar-nav>li>a {

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/portfolio.css">
@@ -45,10 +44,10 @@
 <section>
   <div class="container aboutsection">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 text-center ">
+        <div class="col-sm-6 col-sm-offset-3 text-center backgroundbox">
 
-        <h2> About me </h2>
-        <p class='text-justify'> My name is Randy. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. </p>
+        <h2 class="subtitle"> About me </h2>
+        <p class='text-justify makewhite'> My name is Randy. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. </p>
       </div>
     </div>
   </div>
@@ -57,12 +56,12 @@
 <script id="articleInfo" type="text/x-handlebars=template">
   <section id="articles">
     <article class="template" data-category="cat">
-      <div class="col-sm-4 text-center ">
+      <div class="col-sm-4 text-center backgroundbox ">
         <header>
-          <h2>{{title}}</h2>
+          <h2 class="subtitle">{{title}}</h2>
           <img src={{snapshot}}>
         </header>
-        <section class="article-body text-justify">{{{body}}}
+        <section class="article-body text-justify makewhite">{{{body}}}
         </section>
       </div>
     </article>
