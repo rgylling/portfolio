@@ -14,12 +14,11 @@
 .mainname {
   margin-top:125px;
   font-weight:400;
+  font-size:3.998em;
 }
-
 
 .jumbotron p {
   font-size:30px;
-  font-weight:100;
 }
 
 .hideme2{
@@ -33,15 +32,12 @@
   font-size:20px;
   font-weight:100;
 }
+
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
   color:white;
 }
 
-.navbar-default {
+.navbar-default, .footercolor {
   background-color:#222222;
   border:none;
-}
-
-.footercolor {
-  background-color: #222222;
 }

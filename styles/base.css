@@ -2,8 +2,9 @@ a {
   color:#FED136;
 }
 
-h1 {
+h2 {
   font-weight:100;
+  font-size:2.827em;
 }
 
 img {
@@ -18,4 +19,5 @@ footer {
 
 p {
   margin: auto;
+  font-size:1em;
 }
