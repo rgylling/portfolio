@@ -1,0 +1,80 @@
+#fontchange {
+  font-size:30px;
+  color:#FED136;
+}
+
+.jumbotron {
+  color:white;
+  height: 500px;
+  background-image: url("../img/ghost1.jpg");
+  background-position: bottom;
+  margin-top:50px;
+}
+
+.mainname {
+  margin-top:125px;
+  font-weight:400;
+  font-size:3.998em;
+}
+
+.backgroundbox {
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+  background-color:rgba(34, 34, 34,1);
+  border-radius: 20px;
+}
+
+.bounce {
+  position:relative;
+  text-align:center;
+  font-size:80px;
+  margin-top:250px;
+  color:#222222;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+.jumbotron p {
+  font-size:30px;
+}
+
+.hideme2{
+  width:100%;
+  margin-bottom:200px;
+  margin-top:270px;
+}
+
+.subtitle {
+  color:#f6bf01;
+}
+
+.makewhite {
+  color:white;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:#f6bf01;
+  font-size:20px;
+  font-weight:100;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color:white;
+}
+
+.navbar-default, .footercolor {
+  background-color:#222222;
+  border:none;
+}

@@ -1,0 +1,28 @@
+a {
+  color:#FED136;
+}
+
+h2 {
+  font-weight:100;
+  font-size:2.827em;
+}
+
+img {
+  -webkit-filter:saturate(80%);
+  border-radius:20px;
+}
+
+footer {
+  text-align:center;
+  color: #f6bf01;
+  height:40px;
+}
+
+footer p {
+  padding-top:10px;
+}
+
+p {
+  margin: auto;
+  font-size:1em;
+}

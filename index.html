@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
   </head>
   <body>
     <nav>
@@ -34,40 +36,49 @@
     <div class="jumbotron text-center">
       <div class="container">
         <h1 class="mainname">Randy Gylling</h1>
-        <p class="leaddevelop">Web Developer</p>
+        <h2 class="leaddevelop">Web Developer</p>
+
         <p class="lead"><a href = "http://www.linkedin.com/"> <i class="fa fa-linkedin " aria-hidden="true"></a></i><a href= "http://www.github.com/"><i class="fa fa-github " aria-hidden="true"></i></a>
         </p>
+        <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
       </div>
     </div>
 <section>
   <div class="container aboutsection">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 text-center ">
+        <div class="col-sm-6 col-sm-offset-3 text-center backgroundbox">
 
-        <h1> About me </h1>
-        <p class='text-justify'> My name is Randy. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. </p>
+        <h2 class="subtitle"> About me </h2>
+        <p class='text-justify makewhite'> My name is Randy. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. I need to insert some text right here that displays some stuff about me. I dont really know what to write right now so I decided to write random stuff here. Hi. </p>
       </div>
     </div>
   </div>
 </section>
-   <main>
-    <section>
-     <div class="container hideme2">
-       <div id="top" class="row">
-        <section id="articles">
-          <article class="template" data-category="cat">
-            <div class="col-sm-4 text-center ">
-            <header>
-            <h1>My Projects</h1>
-            <img src="">
-            </header>
-            <section class="article-body text-justify"></section>
-          </article>
+
+<script id="articleInfo" type="text/x-handlebars=template">
+  <section id="articles">
+    <article class="template" data-category="cat">
+      <div class="col-sm-4 text-center backgroundbox ">
+        <header>
+          <h2 class="subtitle">{{title}}</h2>
+          <img src={{snapshot}}>
+        </header>
+        <section class="article-body text-justify makewhite">{{{body}}}
         </section>
+      </div>
+    </article>
+  </section>
+</script>
+
+<main>
+  <section>
+    <div class="container hideme2">
+      <div class="row">
+        <div id="articleContainer">
         </div>
       </div>
     </div>
-  <section>
+  </section>
 </main>
 
 <div class="col-sm-12 footercolor ">
@@ -77,6 +88,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src= "scripts/portfolio.js"> </script>
   </body>

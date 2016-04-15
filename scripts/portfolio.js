@@ -1,22 +1,22 @@
 var portData = [
-   {
-  title:'Project One',
-  url:'www.hi.com',
-  snapshot:'img/puppy1.jpg',
-  body:'<p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
-},
-{
-  title:'Project Two',
-  url:'www.who.com',
-  snapshot:'img/puppy2.jpg',
-  body:'</p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff  This is where I talk about my project and stuff  </p>'
-},
-{
-  title:'Project Three',
-  url:'www.me.com',
-  snapshot:'img/puppy3.jpg',
-  body:'<p>This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff This is where I talk about my project and stuff </p>'
-},
+  {
+    title:'Project One',
+    url:'www.hi.com',
+    snapshot:'img/puppy1.jpg',
+    body:'<p>This is where I talk about my project and stuff I will want to talk about how the project was so cool. This section right here will be where I do some cool things here. Maybe I even do some cooler things here you will never know will you. Okay thanks for listening. </p>'
+  },
+  {
+    title:'Project Two',
+    url:'www.who.com',
+    snapshot:'img/puppy2.jpg',
+    body:'</p>This is where I talk about my project and stuff I will want to talk about how the project was so cool. This section right here will be where I do some cool things here. Maybe I even do some cooler things here you will never know will you. Okay thanks for listening.  </p>'
+  },
+  {
+    title:'Project Three',
+    url:'www.me.com',
+    snapshot:'img/puppy3.jpg',
+    body:'<p>This is where I talk about my project and stuff I will want to talk about how the project was so cool. This section right here will be where I do some cool things here. Maybe I even do some cooler things here you will never know will you. Okay thanks for listening. </p>'
+  },
 ];
 
 
@@ -30,20 +30,25 @@ function Article (opts) {
 }
 
 Article.prototype.toHtml = function() {
+  var source = $('#articleInfo').html();
+  var template = Handlebars.compile(source);
+  return template(this);
+  /*
   var $newArticle = $('article.template').clone();
   $newArticle.find('h1').text(this.title);
   $newArticle.find('img').attr('src',this.snapshot);
   $newArticle.find('.article-body').html(this.body);
   $newArticle.removeClass('template');
   return $newArticle;
-}
+  */
+};
 
 portData.forEach(function(ele) {
   articles.push(new Article(ele));
-})
+});
 
 articles.forEach(function(a){
-  $('#articles').append(a.toHtml())
+  $('#articleContainer').append(a.toHtml());
 });
 
 
@@ -51,14 +56,14 @@ $('section .aboutsection').css('display','none');
 
 //$('nav').on('click',function(){
 $('nav li:nth-child(2)').click(function() {
-    $('section .aboutsection').show();
-    $('main section').css('display','none');
-    $('html, body').animate({
-      scrollTop: $('section .aboutsection').offset().top
-    }, 300);
+  $('section .aboutsection').show();
+  $('main section').css('display','none');
+  $('html, body').animate({
+    scrollTop: $('section .aboutsection').offset().top
+  }, 300);
 });
 $('nav li:first-child').click(function(){
-    $('main section').show();
-    $('section .aboutsection').css('display','none');
+  $('main section').show();
+  $('section .aboutsection').css('display','none');
 });
 //});

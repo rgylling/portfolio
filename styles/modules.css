@@ -1,0 +1,33 @@
+.fa-linkedin {
+  margin-right:10px;
+}
+
+.fa-github {
+  margin-left:10px;
+}
+
+.aboutsection{
+  padding-top:200px;
+  padding-bottom:200px;
+}
+
+.navbar {
+  min-height:60px;
+}
+
+#top {
+  margin: 200px auto 0px auto;
+}
+
+.tab {
+  float:right;
+  padding-top:5px;
+}
+
+#first {
+  display:block;
+}
+
+#second {
+  display:inline;
+}
