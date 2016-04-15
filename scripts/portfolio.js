@@ -33,14 +33,6 @@ Article.prototype.toHtml = function() {
   var source = $('#articleInfo').html();
   var template = Handlebars.compile(source);
   return template(this);
-  /*
-  var $newArticle = $('article.template').clone();
-  $newArticle.find('h1').text(this.title);
-  $newArticle.find('img').attr('src',this.snapshot);
-  $newArticle.find('.article-body').html(this.body);
-  $newArticle.removeClass('template');
-  return $newArticle;
-  */
 };
 
 portData.forEach(function(ele) {
