@@ -15,10 +15,6 @@
   min-height:60px;
 }
 
-#top {
-  margin: 200px auto 0px auto;
-}
-
 .tab {
   float:right;
   padding-top:5px;
@@ -30,4 +26,8 @@
 
 #second {
   display:inline;
+}
+
+#top {
+  margin: 200px auto 0px auto;
 }
