@@ -14,6 +14,7 @@ Article.prototype.toHtml = function() {
   return template(this);
 };
 
+//Put my for each into a function
 Article.loadAll = function (rawData) {
   portData.forEach(function(ele) {
     articles.push(new Article(ele));
@@ -21,6 +22,7 @@ Article.loadAll = function (rawData) {
 
 };
 
+//Grab json file and append it to the page
 Article.fetchAll = function() {
   var getJason = jQuery.getJSON('../data/data.json', function(data){
     Article.loadAll(data);
