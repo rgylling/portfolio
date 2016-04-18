@@ -14,13 +14,21 @@ Article.prototype.toHtml = function() {
   return template(this);
 };
 
-portData.forEach(function(ele) {
-  articles.push(new Article(ele));
-});
+Article.loadAll = function (rawData) {
+  portData.forEach(function(ele) {
+    articles.push(new Article(ele));
+  });
 
-articles.forEach(function(a){
-  $('#articleContainer').append(a.toHtml());
-});
+};
+
+Article.fetchAll = function() {
+  var getJason = jQuery.getJSON('../data/data.json', function(data){
+    Article.loadAll(data);
+    articles.forEach(function(a){
+      $('#articleContainer').append(a.toHtml());
+    });
+  });
+};
 
 
 $('section .aboutsection').css('display','none');
