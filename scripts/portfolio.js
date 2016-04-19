@@ -1,6 +1,7 @@
-
+//empty array that holds my objects
 var articles = [];
 
+//function constructor
 function Article (opts) {
   this.title = opts.title;
   this.url = opts.url;
@@ -8,6 +9,7 @@ function Article (opts) {
   this.body = opts.body;
 }
 
+//handlebar template
 Article.prototype.toHtml = function() {
   var source = $('#articleInfo').html();
   var template = Handlebars.compile(source);
