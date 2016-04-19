@@ -19,7 +19,6 @@ Article.loadAll = function (rawData) {
   portData.forEach(function(ele) {
     articles.push(new Article(ele));
   });
-
 };
 
 //Grab json file and append it to the page
