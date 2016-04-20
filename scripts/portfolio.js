@@ -17,18 +17,22 @@ Article.prototype.toHtml = function() {
 };
 
 //Put my for each into a function
+
 Article.loadAll = function (rawData) {
-  portData.forEach(function(ele) {
+  rawData.forEach(function(ele) {
     articles.push(new Article(ele));
   });
 };
 
+
 //Grab json file and append it to the page
 Article.fetchAll = function() {
   var getJason = jQuery.getJSON('../data/data.json', function(data){
+    console.log('json loaded');
     Article.loadAll(data);
     articles.forEach(function(a){
       $('#articleContainer').append(a.toHtml());
+      console.log('json loaded');
     });
   });
 };
