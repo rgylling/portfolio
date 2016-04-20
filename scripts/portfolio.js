@@ -1,6 +1,8 @@
-//empty array that holds my objects
+//IFFY containing my javascript
 (function(module) {
+
   module.Article = Article; //making Article viewable outside the IIFE
+
 //function constructor
   function Article (opts) {
     this.title = opts.title;
@@ -30,7 +32,6 @@
 //Grab json file and append it to the page
   Article.fetchAll = function() {
     var getJason = jQuery.getJSON('../data/data.json', function(data){
-      console.log('json loaded');
       Article.loadAll(data);
       Article.all.forEach(function(a){
         $('#articleContainer').append(a.toHtml());
@@ -38,6 +39,7 @@
       });
     });
   };
+
 
 //Hides about section when user comes to the page
   $('section .aboutsection').css('display','none');
@@ -56,5 +58,4 @@
     $('main section').show();
     $('section .aboutsection').css('display','none');
   });
-
 })(window);
