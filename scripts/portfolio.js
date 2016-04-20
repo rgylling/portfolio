@@ -1,5 +1,5 @@
 //empty array that holds my objects
-var articles = [];
+
 
 //function constructor
 function Article (opts) {
@@ -8,6 +8,7 @@ function Article (opts) {
   this.snapshot = opts.snapshot;
   this.body = opts.body;
 }
+Article.all = [];
 
 //handlebar template
 Article.prototype.toHtml = function() {
@@ -19,8 +20,9 @@ Article.prototype.toHtml = function() {
 //Put my for each into a function
 
 Article.loadAll = function (rawData) {
-  rawData.forEach(function(ele) {
-    articles.push(new Article(ele));
+
+  Article.all = rawData.map(function(ele) {
+    return new Article(ele);
   });
 };
 
@@ -30,7 +32,7 @@ Article.fetchAll = function() {
   var getJason = jQuery.getJSON('../data/data.json', function(data){
     console.log('json loaded');
     Article.loadAll(data);
-    articles.forEach(function(a){
+    Article.all.forEach(function(a){
       $('#articleContainer').append(a.toHtml());
       console.log('json loaded');
     });
