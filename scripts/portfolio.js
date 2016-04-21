@@ -1,7 +1,7 @@
 //IFFY containing my javascript
-(function(module) {
+//(function(module) {
 
-  module.Article = Article; //making Article viewable outside the IIFE
+  //module.Article = Article; //making Article viewable outside the IIFE
 
 //function constructor
   function Article (opts) {
@@ -47,9 +47,24 @@
     var aboutSection = $('section .aboutsection');
     next(aboutSection);
   };
-  function hideAbout(s){ s.css('display','none'); };
+  function hideAbout(s) { s.css('display','none');
+  };
+
   useNext(hideAbout);
 
+
+
+  $('#nameButton').on('click', function(){
+    var textInput = $('#inputField').val();
+    homePage(textInput);
+  });
+
+  function makeHomeFunction(a) {
+    return function(b) {
+      $('#namePlaceHolder').empty().append('hello ' + b + ' welcome ' + a);
+    };
+  }
+  var homePage = makeHomeFunction(' to my home page');
 
 
 
@@ -71,4 +86,4 @@
     $('main section').show();
     $('section .aboutsection').css('display','none');
   });
-})(window);
+//})(window);
