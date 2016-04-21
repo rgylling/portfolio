@@ -43,19 +43,11 @@
 
 //Hides about section when user comes to the page
   //$('section .aboutsection').css('display','none');
-
-
   function useNext(next) {
     var aboutSection = $('section .aboutsection');
-
     next(aboutSection);
-
-    console.log('everything loaded');
-  }
-
+  };
   function hideAbout(s){ s.css('display','none'); };
-
-
   useNext(hideAbout);
 
 
