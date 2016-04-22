@@ -30,8 +30,10 @@
           </ul>
         </div>
       </div>
-    </div><!-- End navbar -->
+    </div>
   </nav>
+             <!--- *********End navbar*********** -->
+
     <div class="jumbotron text-center">
       <div class="container">
         <h1 class="mainname">Randy Gylling</h1>
@@ -39,10 +41,27 @@
 
         <p class="lead"><a href = "http://www.linkedin.com/"> <i class="fa fa-linkedin " aria-hidden="true"></a></i><a href= "http://www.github.com/"><i class="fa fa-github " aria-hidden="true"></i></a>
         </p>
-        <p id="reduce"> </p>
-        <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
+        
+        <!-- Input field for name submission  -->
+
+        <div class="col-sm-4 col-sm-offset-4 text-center">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button id = "nameButton" class="btn btn-default" type="button">Submit</button>
+            </span>
+            <input id="inputField" type="text" class="form-control" placeholder="enter your name">
+            </div>
+            <p id ="namePlaceHolder"></p>
+            <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
+        </div>
+
+        <!-- End input field section -->
+
       </div>
     </div>
+
+    <!-- End Jumbotron Section -->
+
 <section>
   <div class="container aboutsection">
     <div class="row">
@@ -90,7 +109,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src= "scripts/portfolio.js"> </script>
-<script src= "scripts/reduce.js"></script>
 <script>
                 //Call the fetchAll function
   Article.fetchAll();

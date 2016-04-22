@@ -1,7 +1,7 @@
 //IFFY containing my javascript
-(function(module) {
+//(function(module) {
 
-  module.Article = Article; //making Article viewable outside the IIFE
+  //module.Article = Article; //making Article viewable outside the IIFE
 
 //function constructor
   function Article (opts) {
@@ -42,7 +42,39 @@
 
 
 //Hides about section when user comes to the page
-  $('section .aboutsection').css('display','none');
+  //$('section .aboutsection').css('display','none');
+
+  //High Order function
+  function useNext(next) {
+    var aboutSection = $('section .aboutsection');
+    next(aboutSection);
+  };
+
+  function hideAbout(s) { s.css('display','none');
+  };
+
+  useNext(hideAbout);
+
+
+// High Order Function that generates closure
+// Takes user name and appends it to the page with a custom message
+  $('#nameButton').on('click', function(){
+    var textInput = $('#inputField').val();
+    homePage(textInput);
+  });
+
+  function makeHomeFunction(a) {
+    return function(b) {
+      $('#namePlaceHolder').empty().append('hello ' + b + ' welcome ' + a);
+    };
+  }
+  var homePage = makeHomeFunction(' to my home page');
+
+
+
+
+
+
 
 //Shows about section and hides portfolio section
   $('nav li:nth-child(2)').click(function() {
@@ -58,4 +90,4 @@
     $('main section').show();
     $('section .aboutsection').css('display','none');
   });
-})(window);
+//})(window);
