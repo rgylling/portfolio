@@ -1,13 +1,11 @@
 (function(module) {
-  var aboutController = {};
+  var homeController = {};
 
-  aboutController.index = function() {
-    $('nav li:first-child').click(function(){
-      $("html, body").animate({ scrollTop: 0 }, "slow");
-      $('main section').show();
-      $('section .aboutsection').css('display','none');
-    });
+  homeController.index = function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    $('main section').show();
+    $('section .aboutsection').css('display','none');
   };
 
-  module.aboutController = aboutController;
+  module.homeController = homeController;
 })(window);

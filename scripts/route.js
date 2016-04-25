@@ -3,7 +3,7 @@
   routes.setMapping = function() {
     page.base('/');
 
-    page('', articlesController.index);
+    page('', homeController.index);
     page('about', aboutController.index);
 
     page();
