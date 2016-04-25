@@ -1,4 +1,3 @@
-
 (function(module) {
   var routes = {};
   routes.setMapping = function() {

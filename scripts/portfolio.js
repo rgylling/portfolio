@@ -47,17 +47,17 @@
 
 
 //Shows about section and hides portfolio section
-  $('nav li:nth-child(2)').click(function() {
-    $('section .aboutsection').show();
-    $('main section').css('display','none');
-    $('html, body').animate({
-      scrollTop: $('section .aboutsection').offset().top
-    }, 300);
-  });
+  // $('nav li:nth-child(2)').click(function() {
+  //   $('section .aboutsection').show();
+  //   $('main section').css('display','none');
+  //   $('html, body').animate({
+  //     scrollTop: $('section .aboutsection').offset().top
+  //   }, 300);
+  // });
 
 //Shows portfolio section and hides about me section
-  $('nav li:first-child').click(function(){
-    $('main section').show();
-    $('section .aboutsection').css('display','none');
-  });
+  // $('nav li:first-child').click(function(){
+  //   $('main section').show();
+  //   $('section .aboutsection').css('display','none');
+  // });
 //})(window);
