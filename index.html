@@ -6,9 +6,11 @@
     <title>Portfolio</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+
   </head>
   <body>
     <nav>
@@ -25,8 +27,8 @@
 
         <div id= "firsts" class="collapse in navbar-collapse" aria-expanded="true">
           <ul class="nav navbar-nav navbar-right">
-            <li class = "tab" id = "first" ><a href="#">Home</a></li>
-            <li class = "tab" id ="second"><a href="#">About</a></li>
+            <li class = "tab" id = "first" ><a href="/">Home</a></li>
+            <li class = "tab" id ="second"><a href="/about">About</a></li>
           </ul>
         </div>
       </div>
@@ -41,22 +43,7 @@
 
         <p class="lead"><a href = "http://www.linkedin.com/"> <i class="fa fa-linkedin " aria-hidden="true"></a></i><a href= "http://www.github.com/"><i class="fa fa-github " aria-hidden="true"></i></a>
         </p>
-        
-        <!-- Input field for name submission  -->
-
-        <div class="col-sm-4 col-sm-offset-4 text-center">
-          <div class="input-group">
-            <span class="input-group-btn">
-              <button id = "nameButton" class="btn btn-default" type="button">Submit</button>
-            </span>
-            <input id="inputField" type="text" class="form-control" placeholder="enter your name">
-            </div>
-            <p id ="namePlaceHolder"></p>
-            <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
-        </div>
-
-        <!-- End input field section -->
-
+        <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
       </div>
     </div>
 
@@ -108,10 +95,13 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src= "vendor/page.js"> </script>
+<script src= "scripts/homeController.js"> </script>
+<script src= "scripts/aboutController.js"> </script>
+<script src= "scripts/route.js"> </script>
 <script src= "scripts/portfolio.js"> </script>
 <script>
-                //Call the fetchAll function
   Article.fetchAll();
-</script>
+  </script>
   </body>
 </html>
