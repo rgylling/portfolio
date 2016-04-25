@@ -1,7 +1,3 @@
-//IFFY containing my javascript
-//(function(module) {
-
-  //module.Article = Article; //making Article viewable outside the IIFE
 
 //function constructor
   function Article (opts) {
@@ -44,20 +40,3 @@
 //Hides about section when user comes to the page
 
   $('section .aboutsection').css('display','none');
-
-
-//Shows about section and hides portfolio section
-  // $('nav li:nth-child(2)').click(function() {
-  //   $('section .aboutsection').show();
-  //   $('main section').css('display','none');
-  //   $('html, body').animate({
-  //     scrollTop: $('section .aboutsection').offset().top
-  //   }, 300);
-  // });
-
-//Shows portfolio section and hides about me section
-  // $('nav li:first-child').click(function(){
-  //   $('main section').show();
-  //   $('section .aboutsection').css('display','none');
-  // });
-//})(window);
