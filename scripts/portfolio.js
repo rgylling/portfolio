@@ -42,38 +42,8 @@
 
 
 //Hides about section when user comes to the page
-  //$('section .aboutsection').css('display','none');
 
-  //High Order function
-  function useNext(next) {
-    var aboutSection = $('section .aboutsection');
-    next(aboutSection);
-  };
-
-  function hideAbout(s) { s.css('display','none');
-  };
-
-  useNext(hideAbout);
-
-
-// High Order Function that generates closure
-// Takes user name and appends it to the page with a custom message
-  $('#nameButton').on('click', function(){
-    var textInput = $('#inputField').val();
-    homePage(textInput);
-  });
-
-  function makeHomeFunction(a) {
-    return function(b) {
-      $('#namePlaceHolder').empty().append('hello ' + b + ' welcome ' + a);
-    };
-  }
-  var homePage = makeHomeFunction(' to my home page');
-
-
-
-
-
+  $('section .aboutsection').css('display','none');
 
 
 //Shows about section and hides portfolio section
