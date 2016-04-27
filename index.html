@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-
   </head>
+
+
   <body>
     <nav>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -61,7 +62,6 @@
 </section>
 
 
-
 <script id="repo-template" type="text/x-handlebars-template">
   <li>
     <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
@@ -74,12 +74,6 @@
     {{/if}}
   </li>
 </script>
-
-
-
-
-
-
 
 
 
@@ -109,8 +103,15 @@
   </section>
 </main>
 
-<section id ="repoSection">
-</section>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <section id ="repoSection">
+        <h3> My Github Projects </h3>
+      </section>
+    </div>
+  </div>
+</div>
 
 <div class="col-sm-12 footercolor ">
   <footer>
