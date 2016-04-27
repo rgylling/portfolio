@@ -38,5 +38,6 @@
 
 
 //Hides about section when user comes to the page
+$('repoSection').css('display','none');
 
   $('section .aboutsection').css('display','none');
