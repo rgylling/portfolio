@@ -14,6 +14,7 @@ h2 {
 img {
   -webkit-filter:saturate(80%);
   border-radius:20px;
+  width:70%;
 }
 
 footer {
