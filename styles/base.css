@@ -1,9 +1,14 @@
 body {
-  margin-top:60px;
+  /*margin-top:60px;*/
+  font-family: 'Lora',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a {
-  color:#FED136;
+  color:#00aeef;
+}
+
+h1, h2 {
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h2 {
@@ -12,22 +17,16 @@ h2 {
 }
 
 img {
-  -webkit-filter:saturate(80%);
+  -webkit-filter: grayscale(100%);
   border-radius:20px;
-  width:70%;
-}
-
-footer {
-  text-align:center;
-  color: #f6bf01;
-  height:40px;
-}
-
-footer p {
-  padding-top:10px;
+  width:50%;
 }
 
 p {
   margin: auto;
   font-size:1em;
+}
+
+iframe {
+  -webkit-filter: grayscale(100%) brightness(.6);
 }

@@ -1,35 +1,40 @@
-#fontchange {
-  font-size:30px;
-  color:#FED136;
+
+.backgroundimg {
+  height: 1000px;
+  position: relative;
 }
 
-.jumbotron {
-  color:white;
-  height: 500px;
-  background-image: url("../img/ghost1.jpg");
-  background-position: bottom;
-  margin-top:50px;
+.backgroundimg:before {
+  background:linear-gradient(0deg, #fff, transparent ),url("/img/sail.jpeg");
+  background-position: center;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment:static;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mainname {
   margin-top:125px;
   font-weight:400;
-  font-size:3.998em;
+  font-size:5em;
 }
 
 .backgroundbox {
-  border-style: solid;
-  border-color: white;
-  border-width: 10px;
-  background-color:rgba(34, 34, 34,1);
-  border-radius: 20px;
+  border-bottom: solid 1px grey;
 }
 
 .bounce {
   position:relative;
   text-align:center;
-  font-size:80px;
-  margin-top:220px;
+  font-size:100px;
+  margin-top:450px;
   color:#222222;
   -webkit-animation:bounce 1s infinite;
 }
@@ -41,40 +46,50 @@
   100%     {bottom:0;}
 }
 
-.jumbotron p {
-  font-size:30px;
-}
-
 .hideme2{
   width:100%;
   margin-bottom:200px;
-  margin-top:270px;
+  margin-top:160px;
 }
 
 .subtitle {
-  color:#f6bf01;
+  color: #00aeef;
 }
 
 .makewhite {
-  color:white;
   margin-top:10px;
-  margin-bottom:10px;
+  margin-bottom:50px;
   width:70%;
   margin-left:auto;
   margin-right:auto;
 }
 
+.leaddevelop {
+  font-family: 'Lora',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .navbar-default .navbar-nav>li>a {
-  color:#f6bf01;
+  color:black;
   font-size:20px;
   font-weight:100;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color:white;
+  color: #00aeef;
 }
 
 .navbar-default, .footercolor {
-  background-color:#222222;
+  background-color:transparent;
   border:none;
+}
+
+#fontchange {
+  font-size:30px;
+  color:black;
+}
+
+#project {
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-top:200px;
+  font-size:4em;
 }

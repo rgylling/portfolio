@@ -15,6 +15,10 @@
   min-height:60px;
 }
 
+.lead {
+  font-size:30px;
+}
+
 .tab {
   float:right;
   padding-top:5px;

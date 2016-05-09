@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/normalize.css">
@@ -37,23 +38,26 @@
   </nav>
              <!--- *********End navbar*********** -->
 
-    <div class="jumbotron text-center">
-      <div class="container">
-        <h1 class="mainname">Randy Gylling</h1>
-        <h2 class="leaddevelop">Web Developer</p>
 
+<div class="backgroundimg">
+  <div class="container headercontainer">
+    <div class="row headercenter">
+      <div class="col-sm-12 text-center">
+        <h1 class="mainname">Randy Gylling</h1>
+        <h2 class="leaddevelop ">Web Developer</h2>
         <p class="lead"><a href = "http://www.linkedin.com/"> <i class="fa fa-linkedin " aria-hidden="true"></a></i><a href= "http://www.github.com/"><i class="fa fa-github " aria-hidden="true"></i></a>
         </p>
         <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- End Jumbotron Section -->
 
 <section>
   <div class="container aboutsection">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 text-center backgroundbox">
+        <div class="col-sm-8 col-sm-offset-2 text-center backgroundbox">
         <h2 class="subtitle"> About me </h2>
         <p class='text-justify makewhite'> Hello there and welcome to my page! My names Randy, I am 25 years old and I am from Murrieta California. I enjoy playing guitar, hiking, and pretty much anything outdoors (though programming is starting to hinder that). Currently I am living in Portland Oregon after attending Code Fellows web development bootcamp. How did I go from Murrieta to Portland you ask? Well before I answer that I think its best to tell you a little bit about my background. Before Code Fellows I was an Engineer technician at an engineering firm in California. I basically built automation machinery and traveled around fixing them. I always tried to continuously push myself to learn more which got me into the programming side of the machinery. After learning how to program machinery I started developing a passion for programming which led me to web development. I started off learning HTML, CSS, and Javascript in my spare time until I decided I wanted to do it full time. I eventually quit my job and that is what led me to Code Fellows! The rest is history... Hopefully..</p>
       </div>
@@ -61,26 +65,16 @@
   </div>
 </section>
 
-
-<script id="repo-template" type="text/x-handlebars-template">
-  <li>
-    <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
-    <p>Description: {{description}}</p>
-    <p>Language: {{language}}</p>
-    <p>Created: {{created_at}}</p>
-    <p>Last updated: {{updated_at}}</p>
-    {{#if watchers_count}}
-      <p>{{watchers_count}} watching this repo</p>
-    {{/if}}
-  </li>
-</script>
-
-
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h1 id="project"> My Projects </h1>
+  </div>
+</div>
 
 <script id="articleInfo" type="text/x-handlebars=template">
   <section id="articles">
     <article class="template" data-category="cat">
-      <div class="col-sm-6 text-center backgroundbox">
+      <div class="col-sm-10 col-sm-offset-1 text-center backgroundbox">
         <header>
           <h2 class="subtitle"><a href="{{url}}">{{title}}</a></h2>
           <img src={{snapshot}}>
@@ -103,20 +97,13 @@
   </section>
 </main>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <section id ="repoSection">
-        <h3> My Github Projects </h3>
-      </section>
-    </div>
-  </div>
-</div>
 
-<div class="col-sm-12 footercolor ">
-  <footer>
-    <p>  &copy; 2016 Randy Gylling </p>
-  </footer>
+<div class="row">
+  <div class="col-sm-12 footercolor ">
+    <footer>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106370.35277553817!2d-117.26848095589442!3d33.57744022407446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db7d3fc502f2f1%3A0x12d42ef99dd4ed8f!2sMurrieta%2C+CA!5e0!3m2!1sen!2sus!4v1462825392732" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </footer>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
