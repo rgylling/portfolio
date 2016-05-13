@@ -1,11 +1,12 @@
 
 .backgroundimg {
-  height: 1000px;
+  height: 500px;
   position: relative;
 }
 
 .backgroundimg:before {
-  background:linear-gradient(0deg, #fff, transparent ),url("/img/sail.jpeg");
+  /*background:linear-gradient(0deg, #fff, transparent ),url("/img/sail.jpeg");*/
+  background-color:#424244;
   background-position: center;
   content: '';
   position: absolute;
@@ -21,8 +22,13 @@
 }
 
 .mainname {
-  margin-top:125px;
   font-weight:400;
+  font-size:5em;
+  color:white;
+}
+
+.about-icon {
+  color:#00aeef;
   font-size:5em;
 }
 
@@ -34,7 +40,7 @@
   position:relative;
   text-align:center;
   font-size:100px;
-  margin-top:450px;
+  margin-top:100px;
   color:#222222;
   -webkit-animation:bounce 1s infinite;
 }
@@ -66,10 +72,12 @@
 
 .leaddevelop {
   font-family: 'Lora',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:white;
 }
 
+
 .navbar-default .navbar-nav>li>a {
-  color:black;
+  color:white;
   font-size:20px;
   font-weight:100;
 }
@@ -83,9 +91,10 @@
   border:none;
 }
 
+
 #fontchange {
   font-size:30px;
-  color:black;
+  color:white;
 }
 
 #project {

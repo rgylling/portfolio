@@ -1,3 +1,8 @@
+body, html{
+
+  overflow-x:hidden;
+}
+
 body {
   /*margin-top:60px;*/
   font-family: 'Lora',"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -19,12 +24,12 @@ h2 {
 img {
   -webkit-filter: grayscale(100%);
   border-radius:20px;
-  width:50%;
+  width:100%;
 }
 
 p {
   margin: auto;
-  font-size:1em;
+  font-size:1.5em;
 }
 
 iframe {

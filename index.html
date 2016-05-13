@@ -24,7 +24,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a id="fontchange" class="navbar-brand text-muted" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+          <!-- <a id="fontchange" class="navbar-brand text-muted" href="#"><i class="fa fa-code" aria-hidden="true"></i></a> -->
       </div>
 
         <div id= "firsts" class="collapse in navbar-collapse" aria-expanded="true">
@@ -42,60 +42,109 @@
 <div class="backgroundimg">
   <div class="container headercontainer">
     <div class="row headercenter">
-      <div class="col-sm-12 text-center">
+      <div class="col-sm-12 text-justify margin-t-150">
         <h1 class="mainname">Randy Gylling</h1>
         <h2 class="leaddevelop ">Web Developer</h2>
-        <p class="lead"><a href = "http://www.linkedin.com/"> <i class="fa fa-linkedin " aria-hidden="true"></a></i><a href= "http://www.github.com/"><i class="fa fa-github " aria-hidden="true"></i></a>
-        </p>
-        <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<section>
-  <div class="container aboutsection">
-    <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text-center backgroundbox">
-        <h2 class="subtitle"> About me </h2>
-        <p class='text-justify makewhite'> Hello there and welcome to my page! My names Randy, I am 25 years old and I am from Murrieta California. I enjoy playing guitar, hiking, and pretty much anything outdoors (though programming is starting to hinder that). Currently I am living in Portland Oregon after attending Code Fellows web development bootcamp. How did I go from Murrieta to Portland you ask? Well before I answer that I think its best to tell you a little bit about my background. Before Code Fellows I was an Engineer technician at an engineering firm in California. I basically built automation machinery and traveled around fixing them. I always tried to continuously push myself to learn more which got me into the programming side of the machinery. After learning how to program machinery I started developing a passion for programming which led me to web development. I started off learning HTML, CSS, and Javascript in my spare time until I decided I wanted to do it full time. I eventually quit my job and that is what led me to Code Fellows! The rest is history... Hopefully..</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="row">
-  <div class="col-sm-12 text-center">
-    <h1 id="project"> My Projects </h1>
-  </div>
-</div>
-
-<script id="articleInfo" type="text/x-handlebars=template">
-  <section id="articles">
-    <article class="template" data-category="cat">
-      <div class="col-sm-10 col-sm-offset-1 text-center backgroundbox">
-        <header>
-          <h2 class="subtitle"><a href="{{url}}">{{title}}</a></h2>
-          <img src={{snapshot}}>
-        </header>
-        <section class="article-body text-justify makewhite">{{{body}}}
-        </section>
-      </div>
-    </article>
-  </section>
-</script>
-
-<main>
-  <section>
-    <div class="container hideme2">
-      <div class="row">
-        <div id="articleContainer">
+        <div class="lead text-center"><a href = "http://www.linkedin.com/in/randygylling"> <i class="fa fa-linkedin " aria-hidden="true"></a></i><a href= "http://www.github.com/rgylling"><i class="fa fa-github " aria-hidden="true"></i></a>
+          <!-- <div>
+          <i class="fa fa-angle-down bounce text-center" aria-hidden="true"></i>
+          </div> -->
         </div>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+</div>
+
+
+
+
+<div class="container margin-t-100 margin-b-100">
+  <div class="row">
+    <div class="col-sm-12 text-center margin-t-100 margin-b-100">
+      <h2> A little more about me </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 text-center">
+      <i class="fa fa-headphones about-icon" aria-hidden="true"></i>
+      <p class="bold">Music Lover</p>
+      <p>I am a guitar player who enjoys composing music with friends.</p>
+    </div>
+    <div class="col-sm-4 text-center">
+      <i class="fa fa-desktop about-icon" aria-hidden="true"></i>
+      <p class="bold">Computer Lover</p>
+      <p>I am a web developer who relies on his computer far too much.</p>
+    </div>
+    <div class="col-sm-4 text-center">
+      <i class="fa fa-tree about-icon" aria-hidden="true"></i>
+      <p class="bold">Outdoors Lover</p>
+      <p>I enjoy hiking, camping, barbecuing, or anything outdoors. </p>
+    </div>
+  </div>
+</div>
+
+<div class="container grayrow  margin-t-100  padding-b-50 padding-t-50">
+  <div class="row">
+    <div class="col-sm-12 text-center  margin-b-100">
+      <h2> My Background </h2>
+      <h5> how I got here </h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-1">
+      <h3> From The <span class="bold">Engineering</span> Field To <span class="bold">Web Development</span></h3>
+    </div>
+    <div class="col-sm-6 col-sm-offset-2">
+      <p> Before discovering the wonderful world of web development I worked at an engineering firm building automation machinery. After working in the engineering field for 4 years I started learning how to program the machinery I was building. This is when I discovered how much I enjoyed programming. This is when I decided to go to a software development school and the rest is history. </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container padding-b-50 padding-t-50">
+<div class="row">
+  <div class="col-sm-12 text-center margin-b-100">
+    <h2>Project Highlights</h2>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h2 class="colorfix">Hoppie</h2>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-6">
+  <p>Hoppie is a friendly application designed to find local breweries near you. This app allows you to search breweries near your location as well as provided a blood alcohol content calculator to make sure you and your friends make it home safely. This app was built with HTML, CSS, Javascript, jQuery, Foundations framework, page.js, handlebar.js, node.js, express.js, postgresql, jquery UI, Yelp API, Google maps API, AJAX, JSON, SMACSS, MVC, and CRUD.</p>
+  </div>
+  <div class="col-sm-6">
+    <img src="img/hoppie.png">
+</div>
+
+</div>
+</div>
+
+<div class="container grayrow margin-t-100  padding-b-50 padding-t-50 margin-b-100">
+<div class="row">
+  <div class="col-sm-12 text-center margin-b-100">
+    <h2 class="colorfix">The Trash Brigade</h2>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-6">
+    <img src="img/brigada1.png">
+</div>
+<div class="col-sm-6">
+<p>La Brigada de la Basura is a charity founded by a student from Code Fellows. After realizing they didn't have a website we decided to make one for them! This project utilizes Bootstrap, Jekyll, HTML, CSS, JAVASCRIPT, and some jQuery. The website was built in one week by three Code Fellows students.</p>
+</div>
+
+</div>
+
+</div>
+
+
 
 
 <div class="row">
@@ -116,8 +165,6 @@
 <script src= "/scripts/aboutController.js"> </script>
 <script src= "/scripts/route.js"> </script>
 <script src= "/scripts/portfolio.js"> </script>
-<script>
-  Article.fetchAll();
-</script>
+
 </body>
 </html>

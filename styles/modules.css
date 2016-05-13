@@ -16,12 +16,46 @@
 }
 
 .lead {
-  font-size:30px;
+  font-size:3em;
+}
+
+.colorfix {
+  color: #00aeef;
 }
 
 .tab {
   float:right;
   padding-top:5px;
+}
+
+.margin-t-150 {
+  margin-top:150px;
+}
+
+.margin-t-100 {
+  margin-top:100px
+}
+
+.margin-b-100 {
+  margin-bottom:100px;
+}
+
+.padding-b-50 {
+  padding-bottom:50px;
+}
+
+.padding-t-50 {
+  padding-top: 50px;
+}
+
+.bold {
+  font-weight:bold;
+  color:#00aeef;
+}
+
+.grayrow {
+  background-color:#f2f2f2;
+  width:100%;
 }
 
 #first {
