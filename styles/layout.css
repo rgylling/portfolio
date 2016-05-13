@@ -93,7 +93,11 @@
 
 
 #fontchange {
-  width:60%;
+  font-size:30px;
+  padding-left:0px;
+  color:#00aeef;
+  visibility: hidden;
+  
 }
 
 #project {
