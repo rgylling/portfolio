@@ -23,6 +23,11 @@
   color: #00aeef;
 }
 
+.max-width {
+  width:100%;
+}
+
+
 .tab {
   float:right;
   padding-top:5px;
