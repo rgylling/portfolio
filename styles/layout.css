@@ -1,6 +1,6 @@
 
 .backgroundimg {
-  height: 500px;
+  height: 600px;
   position: relative;
 }
 
@@ -79,7 +79,7 @@
 .navbar-default .navbar-nav>li>a {
   color:white;
   font-size:20px;
-  font-weight:100;
+  margin-right:20px;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -93,8 +93,7 @@
 
 
 #fontchange {
-  font-size:30px;
-  color:white;
+  width:60%;
 }
 
 #project {
