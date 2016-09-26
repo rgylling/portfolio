@@ -140,10 +140,8 @@ height: 19px;
 	}
 
 	.chart_color {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 12px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    color:#dfdfdf;
+    font-size: 15px;
     height: 40px;
     padding: 14px;
     text-transform: uppercase;
@@ -343,4 +341,66 @@ filter: none;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+  .lead2 {
+      font-size: 5em;
+      margin: 30px 10px 30px 10px !important;
+  }
+
+  .cell-phone {
+      margin-left: 0px;
+      margin-top: 0px;
+      width: 50%;
+  }
+
+  .mainname {
+    font-size:90px;
+
+  }
+
+  .mar-bottom-600 {
+    margin-bottom:300px !important;
+  }
+
+  .sub-title {
+    font-size: 2.5em !important;
+}
+
+.pad-left-40 {
+    padding-left: 8px !important;
+}
+
+}
+
+@media screen and (max-width: 767px){
+  .lead2 {
+      font-size: 5em;
+      margin: 30px 10px 30px 10px !important;
+  }
+
+  .cell-phone {
+      margin-left: 0px;
+      margin-top: 0px;
+      width: 50%;
+  }
+
+  .mainname {
+    font-size:65px;
+    text-align:center;
+  }
+
+  .mar-bottom-600 {
+    margin-bottom:150px !important;
+  }
+
+  .sub-title {
+    font-size: 2.5em !important;
+}
+
+.pad-left-40 {
+    padding-left: 8px !important;
+}
+
 }

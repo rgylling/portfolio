@@ -94,15 +94,15 @@ if( $('#charts').length > 0 ) { // if target element exists in DOM
 			 $('.bootstrap_chart').addClass('bootstrap');
        $('.responsive_chart').addClass('responsive');
 	} else {
-			 $('.html_chart').removeClass('html');
-			 $('.css_chart').removeClass('css');
-			 $('.js_chart').removeClass('js');
-			 $('.wordpress_chart').removeClass('wordpress');
-			 $('.ruby_chart').removeClass('ruby');
-			 $('.ps_chart').removeClass('ps');
-			 $('.git_chart').removeClass('git');
-			 $('.bootstrap_chart').removeClass('bootstrap');
-       $('.responsive_chart').removeClass('responsive');
+			//  $('.html_chart').removeClass('html');
+			//  $('.css_chart').removeClass('css');
+			//  $('.js_chart').removeClass('js');
+			//  $('.wordpress_chart').removeClass('wordpress');
+			//  $('.ruby_chart').removeClass('ruby');
+			//  $('.ps_chart').removeClass('ps');
+			//  $('.git_chart').removeClass('git');
+			//  $('.bootstrap_chart').removeClass('bootstrap');
+      //  $('.responsive_chart').removeClass('responsive');
 	}
 }
 $(window).scroll(function(){ // bind window scroll event
@@ -121,15 +121,15 @@ $(window).scroll(function(){ // bind window scroll event
 
 		} else {
 
-			 $('.html_chart').removeClass('html');
-			 $('.css_chart').removeClass('css');
-			 $('.js_chart').removeClass('js');
-			 $('.wordpress_chart').removeClass('wordpress');
-			 $('.ruby_chart').removeClass('ruby');
-			 $('.ps_chart').removeClass('ps');
-			 $('.git_chart').removeClass('git');
-			 $('.bootstrap_chart').removeClass('bootstrap');
-       $('.responsive_chart').removeClass('responsive');
+			//  $('.html_chart').removeClass('html');
+			//  $('.css_chart').removeClass('css');
+			//  $('.js_chart').removeClass('js');
+			//  $('.wordpress_chart').removeClass('wordpress');
+			//  $('.ruby_chart').removeClass('ruby');
+			//  $('.ps_chart').removeClass('ps');
+			//  $('.git_chart').removeClass('git');
+			//  $('.bootstrap_chart').removeClass('bootstrap');
+      //  $('.responsive_chart').removeClass('responsive');
 
 		}
 	}

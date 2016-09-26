@@ -1,14 +1,4 @@
-.fa-linkedin {
-  margin-right:10px;
-}
 
-.fa-github {
-  margin-left:10px;
-}
-
-.fa-envelope {
-  margin-left:20px;
-}
 
 .aboutsection{
   padding-top:200px;
@@ -25,7 +15,7 @@
 
 .lead2 {
   font-size:5em;
-  margin: 30px;
+  margin: 30px 50px 30px 50px;
 }
 
 .colorfix {
