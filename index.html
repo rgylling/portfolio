@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,600,600,700,800" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/normalize.css">
@@ -13,143 +14,160 @@
     <link rel="stylesheet" href="styles/modules.css">
   </head>
 
-
   <body>
-    <nav>
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div id = "changecolor" class="container-fluid">
-          <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-            <a id="fontchange" class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-        </div>
-
-          <div id= "firsts" class="collapse in navbar-collapse" aria-expanded="true">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a id="aboutme" class="tab" href="">About</a></li>
-              <li><a id="background" class="tab" href="">Background</a></li>
-              <li><a id="projects" class="tab" href="">Projects</a></li>
-              <li><a id="contact" class="tab" href="">Contact</a></li>
-            </ul>
+    <div class="backgroundimg mar-bottom-600">
+      <div class="container headercontainer">
+        <div class="row headercenter">
+          <div class="col-sm-12">
+            <h2 class="leaddevelop animation-element slide-left">Randy Gylling</h2>
+            <h1 class="mainname animation-element slide-left">Front-End<br>Developer</h1>
           </div>
         </div>
       </div>
-    </nav>
-             <!--- *********End navbar*********** -->
+    </div>
 
 
-    <div class="backgroundimg">
-      <div class="container headercontainer">
-        <div class="row headercenter">
-          <div class="col-sm-12 text-justify margin-t-150">
-            <h1 class="mainname">Randy Gylling</h1>
-            <h2 class="leaddevelop ">Web Developer</h2>
-            <div class="text-center"><a href = "http://www.linkedin.com/in/randygylling"> <i class="lead fa fa-linkedin " aria-hidden="true"></a></i><a href= "http://www.github.com/rgylling"><i class="lead fa fa-github " aria-hidden="true"></i></a>
+    <div class="container mar-bottom-600 animation-element slide-left">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="sub-title title-weight">Hello friend, I'm <span class="">Randy Gylling</span> welcome to my page!</h2>
+          <p class="left-border pad-left-40 mar-top-60">I've been in web development for over a year now and loving every minute of it. Before doing web development I previously worked in the engineering field building automation machinery. After conquering the engineering field I decided to follow my <span class="whitespan">passion</span> and switch careers. Ever since then I have been constantly <span class="whitespan">learning</span> and <span class="whitespan">growing</span> my skill sets. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mar-bottom-600 animation-element slide-left">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="sub-title">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality</h2>
+          <h3 class="margin-left-160">-Walt Disney</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container animation-element slide-left">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="sub-title">My Skills</h2>
+            <div id="charts" class="mar-bottom-600 wrapper_item">
+             <div class="chrt  ">
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow html_chart">html/html5</div>
+              </div>
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow css_chart">css/css3</div>
+              </div>
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow js_chart">javascript/jquery</div>
+              </div>
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow wordpress_chart">wordpress</div>
+              </div>
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow ruby_chart">ruby</div>
+              </div>
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow ps_chart">Photoshop</div>
+              </div>
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow git_chart">Git</div>
+              </div>
+              <div class="chart animate_all">
+                <div class="chart_color animate_all_slow bootstrap_chart">Bootstrap</div>
+              </div>
+             <div class="chart animate_all">
+               <div class="chart_color animate_all_slow responsive_chart">Responsive Design</div>
+             </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-
-
-
-    <div class="container margin-t-100 margin-b-100 aboutme">
+    <div class="container mar-bottom-600">
       <div class="row">
-        <div class="col-sm-12 text-center margin-t-100 margin-b-100">
-          <h2> A little more about me </h2>
+        <div class="col-sm-12">
+          <h2 class="sub-title margin-b-100 animation-element slide-left">Featured Project</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 animation-element slide-left">
+          <p class=""><span class="whitespan">Hoppie</span> is a friendly application designed to find local breweries near you. This app allows you to search breweries near your location as well as provided a blood alcohol content calculator to make sure you and your friends make it home safely. This app was built with HTML, CSS, Javascript, jQuery, Foundations framework, page.js, handlebar.js, node.js, express.js, postgresql, jquery UI, Yelp API, Google maps API, AJAX, JSON, SMACSS, MVC, and CRUD. <a href="http://hoppieapp.herokuapp.com/"><span  class="whitespan">Click Here</span></a> to visit the website!</p>
+        </div>
+        <div class="col-sm-3 animation-element image-animation">
+          <img class="cell-phone" src="img/hoppiex1.png">
+        </div>
+    </div>
+    </div>
+
+    <div class="container mar-bottom-600 animation-element slide-left">
+      <div class="row">
+        <div class="col-sm-12  margin-b-100 text-center">
+          <h2 class="sub-title">Portfolio</h2>
+          <p>A collection of some my past and current work.</p>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-4 text-center">
-          <i class="fa fa-headphones about-icon" aria-hidden="true"></i>
-          <p class="bold">Music Lover</p>
-          <p>I am a guitar player who enjoys composing music with friends.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 no-padding">
+            <div class="screen">
+              <div class="viewport" style="background-image:url('img/lajollarecovery.png');">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 no-padding">
+              <div class="screen">
+                <div class="viewport" style="background-image:url('img/alcoholabuseonline.png');">
+                </div>
+              </div>
+          </div>
+
+          <div class="col-sm-4 no-padding">
+            <div class="screen">
+              <div class="viewport" style="background-image:url('img/wizpak.png');">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4 text-center">
-          <i class="fa fa-desktop about-icon" aria-hidden="true"></i>
-          <p class="bold">Computer Lover</p>
-          <p>I am a web developer who relies on his computer far too much.</p>
-        </div>
-        <div class="col-sm-4 text-center">
-          <i class="fa fa-tree about-icon" aria-hidden="true"></i>
-          <p class="bold">Outdoors Lover</p>
-          <p>I enjoy hiking, camping, barbecuing, or anything outdoors. </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 no-padding">
+            <div class="screen">
+              <div class="viewport" style="background-image:url('img/bonenfants.png');">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 no-padding">
+            <div class="screen">
+              <div class="viewport" style="background-image:url('img/bhblandingpage.png');">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4 no-padding">
+            <div class="screen">
+              <div class="viewport" style="background-image:url('img/ihc.png');">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid grayrow  margin-t-100  padding-b-50 padding-t-50 background">
-      <div class="row">
-        <div class="col-sm-12 text-center  margin-b-100">
-          <h2> My Background </h2>
-          <h5> how I got here </h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 col-sm-offset-1">
-          <h3> From The <span class="bold">Engineering</span> Field To <span class="bold">Web Development</span></h3>
-        </div>
-        <div class="col-sm-6 col-sm-offset-2">
-          <p> Before discovering the wonderful world of web development, I worked at an engineering firm building automation machinery. After working in the engineering field for about 4 years I started learning how to program the machinery. This is when I discovered how much I enjoyed programming. After that I decided to go to a software development school and the rest is history.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid padding-b-50 padding-t-50 projects">
+    <div class="container padding-b-50 padding-t-50 contact animation-element slide-left">
       <div class="row">
         <div class="col-sm-12 text-center margin-b-100">
-          <h2>Project Highlights</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <p><span class="bold">Hoppie</span> is a friendly application designed to find local breweries near you. This app allows you to search breweries near your location as well as provided a blood alcohol content calculator to make sure you and your friends make it home safely. This app was built with HTML, CSS, Javascript, jQuery, Foundations framework, page.js, handlebar.js, node.js, express.js, postgresql, jquery UI, Yelp API, Google maps API, AJAX, JSON, SMACSS, MVC, and CRUD. <a href="http://hoppieapp.herokuapp.com/"><span class="bold">Click Here</span></a> to visit the website!
-          </p>
-        </div>
-         <div class="col-sm-6">
-          <img src="img/hoppie.png">
-         </div>
-       </div>
-    </div>
-
-    <div class="container-fluid grayrow margin-t-100  padding-b-50 padding-t-50 margin-b-100">
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="img/brigada1.png">
-        </div>
-        <div class="col-sm-6">
-          <p><span class="bold">La Brigada de Brasura</span> is a website created for charity that was started by a Code Fellows Student. La Brigada de Brasura (the trash brigade) is a charity that enlists the help of local children to clean up the community. The charity was faced with the dilemma of having no way to accept donations via the internet. We decided to go ahead and bring La Brigade de Brasura into 2016 with a brand new website! The website was built using HTML, CSS, JavaScript, jQuery, Jekyll, and Bootstrap framework. <a href="http://rgylling.github.io/TrashBrigade/"><span class="bold">Click Here</span></a> to visit the website!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container padding-b-50 padding-t-50 contact">
-      <div class="row">
-        <div class="col-sm-12 text-center margin-b-100">
-          <h2 class="margin-b-100">Get in touch</h2>
+          <h2 class="sub-title margin-b-100">Get in touch</h2>
           <a class="lead2" href = "http://www.linkedin.com/in/randygylling"> <i class="fa fa-linkedin " aria-hidden="true">
           </a></i><a class="lead2" href= "http://www.github.com/rgylling"><i class="fa fa-github " aria-hidden="true"></i></a>
           <a class="lead2 " href = "mailto:mikegylling@yahoo.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-
         </div>
-      </div>
-    </div>
-
-
-
-    <div class="row">
-      <div class="col-sm-12 footercolor ">
-        <footer>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106370.35277553817!2d-117.26848095589442!3d33.57744022407446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db7d3fc502f2f1%3A0x12d42ef99dd4ed8f!2sMurrieta%2C+CA!5e0!3m2!1sen!2sus!4v1462825392732" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </footer>
       </div>
     </div>
 
@@ -157,6 +175,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src= "vendor/page.js"> </script>
-    <script src= "/scripts/portfolio.js"> </script>
+    <script src= "scripts/portfolio.js"> </script>
  </body>
 </html>

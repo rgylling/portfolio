@@ -1,19 +1,20 @@
 body, html{
-
   overflow-x:hidden;
 }
 
 body {
-  /*margin-top:60px;*/
-  font-family: 'Lora',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #0c0c0c;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color:#b2b2b2;
 }
 
 a {
-  color:#00aeef;
+  color: inherit;
+  text-decoration: underline;
 }
 
 h1, h2 {
-  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 h2 {
@@ -23,15 +24,13 @@ h2 {
 
 img {
   -webkit-filter: grayscale(100%);
-  border-radius:20px;
   width:100%;
 }
 
 p {
   margin: auto;
-  font-size:1.5em;
+  font-size: 19px;
+  font-weight: 200;
+  letter-spacing: .8px;
+  line-height: 32px;
 }
-
-/*iframe {
-  -webkit-filter: grayscale(100%) brightness(.6);
-}*/
