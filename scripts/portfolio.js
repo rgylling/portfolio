@@ -1,69 +1,31 @@
+$(document).ready(function () {
+     $('a[href^="#"]').on('click', function (e) {
+         e.preventDefault();
+
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top - 100
+         }, 900, 'swing', function () {
+             window.location.hash = target;
+         });
+     });
+ });
 
 jQuery(document).ready(function($) {
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop(),
-      navbar = $('.navbar');
-      tab = $('.tab');
-      home = $('#fontchange');
+    navbar = $('.navbar');
 
-    if (scrollPos > 520) {
-      navbar.css('background-color','white');
-      tab.css('color','black');
-      navbar.css('border-bottom', "solid 1px grey")
-      home.css('visibility','visible')
+    if (scrollPos > 100) {
+      navbar.fadeIn("slow");
     } else {
-      navbar.css('background-color','transparent');
-      navbar.css('border-bottom', "none")
-      tab.css('color','white');
-      home.css('visibility','hidden')
+      navbar.fadeOut("slow");
     }
   });
 });
 
-$(document).ready(function (){
-  $("#aboutme").on('click',function(e){
-      e.preventDefault();
-         $('html, body').animate({
-              scrollTop: $(".aboutme").offset().top
-        }, 1000);
-    });
-});
-
-$(document).ready(function (){
-  $("#contact").on('click',function(e){
-      e.preventDefault();
-         $('html, body').animate({
-              scrollTop: $(".contact").offset().top
-        }, 1000);
-    });
-});
-
-$(document).ready(function (){
-  $("#background").on('click',function(e){
-      e.preventDefault();
-         $('html, body').animate({
-              scrollTop: $(".background").offset().top
-        }, 1000);
-    });
-});
-
-$(document).ready(function (){
-  $("#projects").on('click',function(e){
-      e.preventDefault();
-         $('html, body').animate({
-              scrollTop: $(".projects").offset().top
-        }, 1000);
-    });
-});
-
-$(document).ready(function (){
-  $("#fontchange").on('click',function(e){
-      e.preventDefault();
-         $('html, body').animate({
-              scrollTop: $("html").offset().top
-        }, 1000);
-    });
-});
 
 $.fn.is_on_screen = function(){
     var win = $(window);
@@ -81,8 +43,8 @@ $.fn.is_on_screen = function(){
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 };
 
-if( $('#charts').length > 0 ) { // if target element exists in DOM
-	if( $('#charts').is_on_screen() ) { // if target element is visible on screen after DOM loaded
+if( $('#charts').length > 0 ) {
+	if( $('#charts').is_on_screen() ) {
 
 			 $('.html_chart').addClass('html');
 			 $('.css_chart').addClass('css');
@@ -94,21 +56,11 @@ if( $('#charts').length > 0 ) { // if target element exists in DOM
 			 $('.bootstrap_chart').addClass('bootstrap');
        $('.responsive_chart').addClass('responsive');
 	} else {
-			//  $('.html_chart').removeClass('html');
-			//  $('.css_chart').removeClass('css');
-			//  $('.js_chart').removeClass('js');
-			//  $('.wordpress_chart').removeClass('wordpress');
-			//  $('.ruby_chart').removeClass('ruby');
-			//  $('.ps_chart').removeClass('ps');
-			//  $('.git_chart').removeClass('git');
-			//  $('.bootstrap_chart').removeClass('bootstrap');
-      //  $('.responsive_chart').removeClass('responsive');
 	}
 }
-$(window).scroll(function(){ // bind window scroll event
-	if( $('#charts').length > 0 ) { // if target element exists in DOM
-		if( $('#charts').is_on_screen() ) { // if target element is visible on screen after DOM loaded
-
+$(window).scroll(function(){
+	if( $('#charts').length > 0 ) {
+		if( $('#charts').is_on_screen() ) {
 			 $('.html_chart').addClass('html');
 			 $('.css_chart').addClass('css');
 			 $('.js_chart').addClass('js');
@@ -118,19 +70,7 @@ $(window).scroll(function(){ // bind window scroll event
 			 $('.git_chart').addClass('git');
 			 $('.bootstrap_chart').addClass('bootstrap');
        $('.responsive_chart').addClass('responsive');
-
 		} else {
-
-			//  $('.html_chart').removeClass('html');
-			//  $('.css_chart').removeClass('css');
-			//  $('.js_chart').removeClass('js');
-			//  $('.wordpress_chart').removeClass('wordpress');
-			//  $('.ruby_chart').removeClass('ruby');
-			//  $('.ps_chart').removeClass('ps');
-			//  $('.git_chart').removeClass('git');
-			//  $('.bootstrap_chart').removeClass('bootstrap');
-      //  $('.responsive_chart').removeClass('responsive');
-
 		}
 	}
 });
@@ -148,13 +88,10 @@ function check_if_in_view() {
     var element_height = $element.outerHeight();
     var element_top_position = $element.offset().top;
     var element_bottom_position = (element_top_position + element_height);
-
-    //check to see if this current container is within viewport
     if ((element_bottom_position >= window_top_position) &&
         (element_top_position <= window_bottom_position)) {
       $element.addClass('in-view');
     } else {
-      // $element.removeClass('in-view');
     }
   });
 }

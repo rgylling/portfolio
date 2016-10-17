@@ -6,9 +6,11 @@
     <link rel="icon"
           type="image/png"
           href="img/favicon.png">
-    <title>Randy Gylling | Front-end Developer | Portfolio</title>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,600,600,700,800" rel="stylesheet">
+    <title>Randy Gylling - Front-End Developer, Web Designer, Wordpress Developer</title>
+    <meta name="description" content="Randy Gylling is a Front-end Developer, Web Designer and Wordpress Developer based out of Temecula, Ca">
+    <meta name="keywords" content="front-end developer, Wordpress, Web Design, Developer, Temecula">
+    <meta name="author" content="Randy Gylling">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700|Open+Sans:300,400,400i,600,700" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/normalize.css">
@@ -17,43 +19,75 @@
     <link rel="stylesheet" href="styles/modules.css">
   </head>
 
-  <body>
-    <div class="backgroundimg mar-bottom-600">
+  <body id="top" class="animation-element page-animation">
+
+<!-- *********NAV BAR SECTION************* -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Featured Project</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- ********* END NAV BAR SECTION************* -->
+
+
+<!-- *********HEADER SECTION************* -->
+    <div class="backgroundimg">
       <div class="container headercontainer">
-        <div class="row headercenter">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h2 class="leaddevelop animation-element slide-left">Randy Gylling</h2>
-            <h1 class="mainname animation-element slide-left">Front-End<br>Developer</h1>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <h1 class="leaddevelop">Randy Gylling</h1>
+            <h2 class="mainname">Front-End Developer | Web Designer | Wordpress Developer</h2>
           </div>
         </div>
       </div>
     </div>
+<!-- ********* END HEADER SECTION************* -->
 
-
-    <div class="container mar-bottom-600 animation-element slide-left">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-          <h2 class="sub-title title-weight">Hello friend, I'm <span class="">Randy Gylling</span> welcome to my page!</h2>
-          <p class="left-border pad-left-40 mar-top-60">I've been in web development for over a year now and loving every minute of it. Before doing web development I previously worked in the engineering field building automation machinery. After conquering the engineering field I decided to follow my <span class="whitespan">passion</span> and switch careers. Ever since then I have been constantly <span class="whitespan">learning</span> and <span class="whitespan">growing</span> my skill sets. </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mar-bottom-600 animation-element slide-left">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-          <h2 class="sub-title">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality</h2>
-          <h3 class="margin-left-160">-Walt Disney</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="container animation-element slide-left">
+<!-- *********ABOUT SECTION************* -->
+    <div id="aboutme" class=" container margin-t-150 margin-b-150">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2 class="sub-title">My Skills</h2>
-            <div id="charts" class="mar-bottom-600 wrapper_item">
-             <div class="chrt  ">
+          <h2 class="sub-title animation-element slide-left">About Me</h2>
+        </div>
+      </div>
+      <div class="row mar-top-60 animation-element page-animation">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <p>I've been in Web Development for over a year now and loving every minute of it. I completed an intensive Software Development curriculum at Code Fellows, focusing more on Front-End Development and Design. After working as a Web Developer at a Digital Agency, I decided I wanted to continue my education and learn Full Stack Development at Flatiron School Online as I continue to working on projects as a Freelance Web Developer.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <p>Before doing Web Development I previously worked in the engineering field as a Senior Field Service Technician, building automation machinery and traveling the country fixing the machinery. After conquering the engineering field I decided to follow my passion and switch careers. Ever since then I have been constantly learning and growing my skill sets. My previous experience in the engineering field has set me up to excel in software development.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <p>Working at a Digital Agency, I had the opportunity to work on many different types of projects. These projects ranged from Wordpress Development, Websites built from scratch, Front-end Development, Responsive design, Search Engine Optimization, Company Branding, Web Applications and many more. My goal is to find a company where I can expand my skill sets and continue building awesome stuff that I am proud of.   </p>
+        </div>
+      </div>
+    </div>
+<!-- *********END ABOUT SECTION************* -->
+
+    <hr>
+
+<!-- *********SKILLS SECTION************* -->
+    <div id="skills" class="container margin-t-150 margin-b-200">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2 class="sub-title animation-element slide-left">My Skills</h2>
+            <div id="charts" class="mar-top-60 wrapper_item">
+             <div class="chrt">
               <div class="chart animate_all">
                 <div class="chart_color animate_all_slow html_chart">html/html5</div>
               </div>
@@ -86,98 +120,269 @@
         </div>
       </div>
     </div>
+<!-- ********* END SKILLS SECTION************* -->
 
-    <div class="container mar-bottom-600">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2 class="sub-title margin-b-100 animation-element slide-left">Featured Project</h2>
+<!-- *********QUOTE SECTION************* -->
+    <div class="bg-fix center-container">
+      <div class="container animation-element slide-left">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 white-text">
+            <h2 class="white-text">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality</h2>
+            <h3 class="text-indent">-Walt Disney</h3>
+          </div>
         </div>
       </div>
+    </div>
+<!-- *********END QUOTE SECTION************* -->
+
+<!-- *********PROJECTS SECTION************* -->
+    <div id="projects" class="container margin-b-150 margin-t-200">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 animation-element slide-left">
-          <p class=""><span class="whitespan">Hoppie</span> is a friendly application designed to find local breweries near you. This app allows you to search breweries near your location as well as provided a blood alcohol content calculator to make sure you and your friends make it home safely. This app was built with HTML, CSS, Javascript, jQuery, Foundations framework, page.js, handlebar.js, node.js, express.js, postgresql, jquery UI, Yelp API, Google maps API, AJAX, JSON, SMACSS, MVC, and CRUD. <a href="http://hoppieapp.herokuapp.com/"><span  class="whitespan">Click Here</span></a> to visit the website!</p>
+          <h2 class="sub-title margin-t-0">Featured Project</h2>
+          <p class="mar-top-60">Hoppie is a friendly application designed to find local breweries near you. This app allows you to search breweries near your location as well as provided a blood alcohol content calculator to make sure you and your friends make it home safely. This app was built with HTML, CSS, Javascript, jQuery, Foundations framework, page.js, handlebar.js, node.js, express.js, postgresql, jquery UI, Yelp API, Google maps API, AJAX, JSON, SMACSS, MVC, and CRUD. <a href="http://hoppieapp.herokuapp.com/">Click Here</a> to visit the website!</p>
         </div>
-        <div class="text-center col-xs-12 col-sm-12 col-md-3 col-lg-3 animation-element image-animation">
+        <div class="text-center col-xs-12 col-sm-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 animation-element image-animation">
           <img class="cell-phone" src="img/hoppiex1.png">
         </div>
+      </div>
     </div>
-    </div>
+<!-- *********END PROJECTS SECTION************* -->
 
-    <div class="container mar-bottom-600 animation-element slide-left">
+    <hr>
+
+<!-- *********PORTFOLIO SECTION************* -->
+    <div id="portfolio" class="container margin-t-150 margin-b-200">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  margin-b-100 text-center">
-          <h2 class="sub-title">Portfolio</h2>
-          <p>A collection of some my past and current work.</p>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <h2 class="sub-title animation-element slide-left">Portfolio</h2>
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
+      <div class="mar-top-60 animation-element page-animation">
+        <div class="row" >
           <div class="col-sm-4 no-padding">
-            <div class="screen">
-              <div class="viewport" style="background-image:url('img/lajollarecovery.png');">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4 no-padding">
-              <div class="screen">
-                <div class="viewport" style="background-image:url('img/alcoholabuseonline.png');">
+            <div class="outter-bg">
+              <div class =" port-bg" style="background-image:url('img/la-jolla-recovery1.png');">
+                <div class="info center-container">
+                  <div class="inner-bg center-container">
+                    <img class="port-logo" src="img/la-jolla-logo.png">
+                  </div>
                 </div>
               </div>
+            </div>
           </div>
 
           <div class="col-sm-4 no-padding">
-            <div class="screen">
-              <div class="viewport" style="background-image:url('img/wizpak.png');">
+            <div class="outter-bg">
+              <div class ="port-bg" style="background-image:url('img/alcohol-abuse-online1.png');">
+                <div class="info center-container">
+                  <div class="inner-bg center-container">
+                    <img class="port-logo" src="img/aao-logo.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 no-padding">
+            <div class="outter-bg">
+              <div class =" port-bg" style="background-image:url('img/wiz-pak1.png');">
+                <div class="info center-container">
+                  <div class="inner-bg center-container">
+                    <img class="port-logo" src="img/wiz-logo.png">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container">
+      <div>
+        <div class="row animation-element page-animation">
+          <div class="col-sm-4 no-padding">
+            <div class="outter-bg">
+              <div class =" port-bg" style="background-image:url('img/bonenfants-1.png');">
+                <div class="info center-container">
+                  <div class="inner-bg center-container">
+                    <img class="port-logo" src="img/bon-logo.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 no-padding">
+            <div class="outter-bg">
+              <div class =" port-bg" style="background-image:url('img/bhb1.png');">
+                <div class="info center-container">
+                  <div class="inner-bg center-container">
+                    <img class="port-logo" src="img/bhb-logo.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 no-padding">
+            <div class="outter-bg">
+              <div class ="port-bg" style="background-image:url('img/i-h-c1.png');">
+                <div class="info center-container">
+                  <div class="inner-bg center-container">
+                    <img class="port-logo" src="img/integra-logo.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- *********END PORTFOLIO SECTION************* -->
+
+<!-- *********CTA SECTION************* -->
+    <div class="bg-fix  bg-fix-2 center-container">
+      <div class="container animation-element slide-left">
         <div class="row">
-          <div class="col-sm-4 no-padding">
-            <div class="screen">
-              <div class="viewport" style="background-image:url('img/bonenfants.png');">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4 no-padding">
-            <div class="screen">
-              <div class="viewport" style="background-image:url('img/bhblandingpage.png');">
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-sm-4 no-padding">
-            <div class="screen">
-              <div class="viewport" style="background-image:url('img/ihc.png');">
-              </div>
-            </div>
+          <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12 white-text text-center">
+            <h2 class="white-text">Looking for a Web Developer?</h2>
+            <p class="mar-top-60"><a class="contact-btn" href="#contact">Contact Me</a></p>
           </div>
         </div>
       </div>
     </div>
+<!-- *********END CTA SECTION************* -->
 
-    <div class="container padding-b-50 padding-t-50 contact animation-element slide-left">
+<!-- *********EXPERIENCE SECTION************* -->
+    <div id="experience" class="container margin-t-200 margin-b-150 animation-element slide-left">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center margin-b-100">
-          <h2 class="sub-title margin-b-100">Get in touch</h2>
-          <a class="lead2" href = "http://www.linkedin.com/in/randygylling"> <i class="fa fa-linkedin " aria-hidden="true">
-          </a></i><a class="lead2" href= "http://www.github.com/rgylling"><i class="fa fa-github " aria-hidden="true"></i></a>
-          <a class="lead2 " href = "mailto:mikegylling@yahoo.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2 class="sub-title">Experience</h2>
+        </div>
+      </div>
+      <div class="row bottom-border mar-pad-row">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <p>October 2016 - Present</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+          <h4 class="margin-t-0">Web Developer</h4>
+          <p class="sub-p">Freelance | Temecula, Ca </p>
+          <ul>
+            <li>Responsible for writing clean HTML5 utilizing front-end frameworks such as Bootstrap and Foundation.</li>
+            <li>Write modular and scalable CSS utilizing Sass preprocesser. </li>
+            <li>Design, Develop, Debug, and maintain Wordpress websites and Non-wordpress websites for local companies and agencies.</li>
+            <li>Optimize website responsiveness on pre-built websites.</li>
+            <li>Update and maintain customer websites, including content updates, visual enhancements, and general maintenance.</li>
+            <li>Implement high quality Javascript code based on customers specification using frameworks such as Jquery.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row bottom-border mar-pad-row">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <p>May 2016 - October 2016</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+          <h4 class="margin-t-0">Web Developer</h4>
+          <p class="sub-p">Netjumps International | Temecula, Ca </p>
+          <ul>
+            <li>Responsible for writing clean and semantic HTML5 and CSS3 utilizing front-end frameworks such as Bootstrap and Foundation.</li>
+            <li>Develop high quality Javascript code using frameworks such as Jquery.</li>
+            <li>Design, develop, debug, and maintain Wordpress websites and Non-Wordpress websites.</li>
+            <li>Update and maintain customer websites, including content updates, visual enhancements, mobile responsiveness, general maintenance, landing page creation, plug ins & widgets.</li>
+            <li>Manage several projects at a time ensuring on time delivery of customer websites and other web services.</li>
+            <li>Create wire frames, prototypes, and site maps during the planning and design stages of projects using Photoshop and Illustrator.</li>
+            <li>Implementation of responsive designs for mobile experience according to company best practices.</li>
+            <li>Test and troubleshoot websites on multiple browsers and platforms using tools such as BrowserStack.</li>
+            <li>Use Advanced Custom Fields along with creating custom page templates improving user experience.</li>
+            <li>Light SEO optimization ensuring SEO department has a head start.</li>
+            <li>Create custom banners and call to actions with Photoshop.</li>
+            <li>Use project management tools such as Trello and Basecamp.</li>
+            <li>Establish and implement current industry best practices and standards for all front-end development.</li>
+            <li>Learn new technologies to keep web presence on the cutting edge.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mar-pad-row">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <p>April 2012 - March 2016</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+          <h4 class="margin-t-0">Senior Field Service Technician</h4>
+          <p class="sub-p">AFM Engineering | Corona, Ca </p>
+          <ul>
+          <li>Collaborate and engineer industrial automation machinery to customer specifications with a team of engineers.</li>
+          <li>Program and write software for Programmable Logic Controllers using computer-based ladder logic software for millisecond critical automation systems.</li>
+          <li>Required to identify and troubleshoot electro-mechanical and PLC software systems in a fast paced environment utilizing engineers’ schematics and specifications with little to no supervision.</li>
+          <li>Program and customize human machine interfaces to establish a seamless user experience.</li>
+          <li>Calculate and program variable frequency drives, servo drives, fiber optic sensors and electronic sensors to control the flow of numerous high speed motors.</li>
+          <li>Dispatched to facilities around the US and Canada to Install, service, and maintain various types of labeling machinery, conveyor systems, and heat tunnels.</li>
+          <li>Custom build electrical control panels for various types of machinery. Required developing control panel layouts, electrical wiring, and general panel engineering.
+          Supervise, mentor, and train a crew of junior technicians on machine set up, electrical wiring, and machine engineering.</li>
+          <li>Fabricate and re work various automation components using standard machine shop tools ensuring little to no downtime.</li>
+          <li>Responsible for managing customer accounts while providing over the phone technical support to ensure customer needs were properly met.</li>
+        </ul>
         </div>
       </div>
     </div>
+<!-- ********* END EXPERIENCE SECTION************* -->
 
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src= "vendor/page.js"> </script>
+    <hr>
+
+<!-- *********CONTACT SECTION************* -->
+    <div class="container margin-b-200 margin-t-150 contact">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2 class="sub-title animation-element slide-left">Get in touch</h2>
+        </div>
+      </div>
+
+      <div id="contact" class="row mar-top-60 animation-element page-animation">
+        <div class="mar-top-34 col-xs-12 col-sm-12 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 ">
+          <div>
+            <p class="font-alt contact-title">Email</p>
+            <p class="contact-text bottom-border"><a href = "mailto:mikegylling@yahoo.com">mikegylling@yahoo.com</a></p>
+          </div>
+          <div class="margin-t-40">
+            <p class="font-alt contact-title">Social</p>
+            <div class="contact-text bottom-border">
+              <a class="lead2" href = "http://www.linkedin.com/in/randygylling"> <i class="fa fa-linkedin " aria-hidden="true">
+              </a></i><a class="lead2" href= "http://www.github.com/rgylling"><i class="fa fa-github " aria-hidden="true"></i></a>
+              <a class="lead2 " href = "http://codepen.io/rgylling/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+           <div style="height:20em;"><iframe src="http://formaya.com/form.php?id=1062" height="100%" width="100%" frameborder="0" scrolling="no"></iframe></div>
+        </div>
+      </div>
+    </div>
+<!-- *********END CONTACT SECTION************* -->
+
+<!-- *********TOP BUTTON SECTION************* -->
+    <div>
+			 <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+		</div>
+<!-- *********TOP BUTTON SECTION************* -->
+
+
+<!-- *********FOOTER SECTION************* -->
+    <div class="container-fluid footer-info">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+  				<div class="footer-top font-alt">
+  					© Randy Gylling 2016.
+          </div>
+  				<div class="footer-bottom">
+  					Made with love.
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- *********END FOOTER SECTION************* -->
+
+    <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src= "scripts/portfolio.js"> </script>
  </body>
 </html>
