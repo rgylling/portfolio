@@ -210,6 +210,21 @@ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
 
 @media screen and (max-width: 767px){
 
+  .margin-b-200 {
+    margin-bottom:100px !important;
+  }
+  .margin-b-150 {
+    margin-bottom:100px !important;
+  }
+
+  .margin-t-150 {
+    margin-top:100px !important;
+  }
+
+  .margin-t-200 {
+    margin-top:100px !important;
+  }
+
   ul.nav.navbar-nav.navbar-right {
      height:initial !important;
      display: initial !important;
@@ -236,6 +251,7 @@ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
 
   .leaddevelop {
     letter-spacing: 25px;
+    margin-bottom:100px;
 }
 
   .cell-phone {
