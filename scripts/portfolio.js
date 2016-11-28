@@ -55,6 +55,10 @@ if( $('#charts').length > 0 ) {
 			 $('.git_chart').addClass('git');
 			 $('.bootstrap_chart').addClass('bootstrap');
        $('.responsive_chart').addClass('responsive');
+       $('.rails_chart').addClass('rails');
+       $('.sqlite_chart').addClass('sqlite');
+       $('.rspec_chart').addClass('rspec');
+       $('.sinatra_chart').addClass('sinatra');
 	} else {
 	}
 }
@@ -70,6 +74,10 @@ $(window).scroll(function(){
 			 $('.git_chart').addClass('git');
 			 $('.bootstrap_chart').addClass('bootstrap');
        $('.responsive_chart').addClass('responsive');
+       $('.rails_chart').addClass('rails');
+       $('.sqlite_chart').addClass('sqlite');
+       $('.rspec_chart').addClass('rspec');
+       $('.sinatra_chart').addClass('sinatra');
 		} else {
 		}
 	}
