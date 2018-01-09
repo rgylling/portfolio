@@ -1,3 +1,4 @@
+@import "base.scss";
 
 .backgroundimg {
   height:100vh;
@@ -17,7 +18,6 @@
 }
 
 .mainname {
-  color:$white-color;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 19px;
@@ -94,6 +94,18 @@ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
 	.js {
 		width:80%;
 	}
+
+  .react {
+    width:60%;
+  }
+
+  .angular {
+    width:50%;
+  }
+
+  .design {
+    width:70%;
+  }
 
 	.ps {
 		width:50%;
@@ -443,4 +455,9 @@ i.fa.fa-bars {
   background-color: rgba(10,10,10, .95);
   padding-top: 15px;
   padding-bottom: 5px;
+}
+
+.no-filter {
+  filter: none;
+  -webkit-filter: none;
 }

@@ -49,6 +49,9 @@ if( $('#charts').length > 0 ) {
 			 $('.html_chart').addClass('html');
 			 $('.css_chart').addClass('css');
 			 $('.js_chart').addClass('js');
+       $('.react_chart').addClass('react');
+       $('.angular_chart').addClass('angular');
+       $('.design_chart').addClass('design');
 			 $('.wordpress_chart').addClass('wordpress');
 			 $('.ruby_chart').addClass('ruby');
 			 $('.ps_chart').addClass('ps');
@@ -68,6 +71,9 @@ $(window).scroll(function(){
 			 $('.html_chart').addClass('html');
 			 $('.css_chart').addClass('css');
 			 $('.js_chart').addClass('js');
+       $('.react_chart').addClass('react');
+       $('.angular_chart').addClass('angular');
+       $('.design_chart').addClass('design');
 			 $('.wordpress_chart').addClass('wordpress');
 			 $('.ruby_chart').addClass('ruby');
 			 $('.ps_chart').addClass('ps');
